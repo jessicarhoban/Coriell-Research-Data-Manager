@@ -1,0 +1,242 @@
+Table cell_df {
+"cell_name" varchar(255) 
+"cell_id_uberon" varchar(255) 
+"cell_uuid" varchar(255) 
+ }
+Table cell_folder_df {
+"cell_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table cell_line_cell_df {
+"cell_uuid" varchar(255) 
+"cell_line_uuid" varchar(255) 
+ }
+Table cell_line_df {
+"cell_line_name" varchar(255) 
+"organism" varchar(255) 
+"age" varchar(255) 
+"sex" varchar(255) 
+"population" varchar(255) 
+"biopsy_source" varchar(255) 
+"tissue_type" varchar(255) 
+"tissue_id_uberon" varchar(255) 
+"cell_type" varchar(255) 
+"cell_id_uberon" varchar(255) 
+"category" varchar(255) 
+"sub_category" varchar(255) 
+"transformant" varchar(255) 
+"morphology" varchar(255) 
+"disease_category" varchar(255) 
+"disease_name" varchar(255) 
+"disease_type" varchar(255) 
+"disease_grade" varchar(255) 
+"disease_id_ncit" varchar(255) 
+"product_format" varchar(255) 
+"storage_conditions" varchar(255) 
+"imsrjax_id" varchar(255) 
+"cellosaurus_id" varchar(255) 
+"atcc_id" varchar(255) 
+"coriell_id" varchar(255) 
+"cell_line_uuid" varchar(255) 
+ }
+Table cell_line_disease_df {
+"disease_uuid" varchar(255) 
+"disease_type" varchar(255) 
+"disease_grade" varchar(255) 
+"cell_line_uuid" varchar(255) 
+ }
+Table cell_line_folder_df {
+"cell_line_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table cell_line_gene_df {
+"gene_uuid" varchar(255) 
+"cell_line_uuid" varchar(255) 
+"seqvariation_type" varchar(255) 
+"hgnc_id" varchar(255) 
+ }
+Table cell_line_organism_df {
+"organism_uuid" varchar(255) 
+"cell_line_uuid" varchar(255) 
+ }
+Table cell_line_tissue_df {
+"tissue_uuid" varchar(255) 
+"cell_line_uuid" varchar(255) 
+ }
+Table disease_df {
+"disease_category" varchar(255) 
+"disease_name" varchar(255) 
+"disease_symbol" varchar(255) 
+"disease_id_ncit" varchar(255) 
+"disease_uuid" varchar(255) 
+ }
+Table disease_folder_df {
+"disease_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table disease_gene_df {
+"gene_uuid" varchar(255) 
+"disease_uuid" varchar(255) 
+ }
+Table experiment_df {
+"experiment_name" varchar(255) 
+"experiment_symbol" varchar(255) 
+"subtype" varchar(255) 
+"experiment_uuid" varchar(255) 
+"experiment_category_uuid" varchar(255) 
+ }
+Table experiment_folder_df {
+"experiment_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table folder_df {
+"date" varchar(255) 
+"folderpath" varchar(255) 
+"foldername" varchar(255) 
+"reduced_foldername" varchar(255) 
+"reduced_jjdescription" varchar(255) 
+"jj_description" varchar(255) 
+"jj_type" varchar(255) 
+"cbix1/2" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table gene_df {
+"gene_id_hgnc" varchar(255) 
+"gene_id_ncbi" varchar(255) 
+"gene_name" varchar(255) 
+"organism_name" varchar(255) 
+"taxonomy_id_ncbi" varchar(255) 
+"gene_symbol" varchar(255) 
+"gene_uuid" varchar(255) 
+ }
+Table gene_folder_df {
+"gene_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table gene_organism_df {
+"organism_uuid" varchar(255) 
+"gene_uuid" varchar(255) 
+ }
+Table institute_df {
+"institute_name" varchar(255) 
+"institute_uuid" varchar(255) 
+ }
+Table institute_folder_df {
+"institute_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table lab_df {
+"lab_name" varchar(255) 
+"lab_uuid" varchar(255) 
+ }
+Table lab_folder_df {
+"lab_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table organism_df {
+"organism_name" varchar(255) 
+"latin_name" varchar(255) 
+"taxonomy_id_ncbi" varchar(255) 
+"organism_uuid" varchar(255) 
+ }
+Table organism_folder_df {
+"organism_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table researcher_df {
+"researcher_name" varchar(255) 
+"institute" varchar(255) 
+"lab" varchar(255) 
+"researcher_uuid" varchar(255) 
+ }
+Table researcher_folder_df {
+"researcher_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table researcher_institute_df {
+"institute_uuid" varchar(255) 
+"researcher_uuid" varchar(255) 
+ }
+Table researcher_lab_df {
+"lab_uuid" varchar(255) 
+"researcher_uuid" varchar(255) 
+ }
+Table seqcompany_df {
+"seqcompany_name" varchar(255) 
+"seqcompany_uuid" varchar(255) 
+ }
+Table seqcompany_folder_df {
+"seqcompany_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table study_df {
+"study_name" varchar(255) 
+"study_uuid" varchar(255) 
+ }
+Table study_folder_df {
+"study_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table tissue_df {
+"tissue_name" varchar(255) 
+"tissue_id_bto" varchar(255) 
+"tissue_id_uberon" varchar(255) 
+"tissue_uuid" varchar(255) 
+ }
+Table tissue_folder_df {
+"tissue_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Table treatment_df {
+"treatment_name" varchar(255) 
+"treatment_uuid" varchar(255) 
+"treatment_symbol" varchar(255) 
+ }
+Table treatment_folder_df {
+"treatment_uuid" varchar(255) 
+"folder_uuid" varchar(255) 
+ }
+Ref: folder_df.folder_uuid < cell_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < cell_line_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < disease_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < experiment_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < gene_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < institute_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < lab_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < organism_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < researcher_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < seqcompany_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < study_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < tissue_folder_df.folder_uuid
+Ref: folder_df.folder_uuid < treatment_folder_df.folder_uuid
+Ref: cell_df.cell_uuid < cell_folder_df.cell_uuid
+Ref: cell_line_df.cell_line_uuid < cell_line_folder_df.cell_line_uuid
+Ref: disease_df.disease_uuid < disease_folder_df.disease_uuid
+Ref: experiment_df.experiment_uuid < experiment_folder_df.experiment_uuid
+Ref: gene_df.gene_uuid < gene_folder_df.gene_uuid
+Ref: institute_df.institute_uuid < institute_folder_df.institute_uuid
+Ref: lab_df.lab_uuid < lab_folder_df.lab_uuid
+Ref: organism_df.organism_uuid < organism_folder_df.organism_uuid
+Ref: researcher_df.researcher_uuid < researcher_folder_df.researcher_uuid
+Ref: seqcompany_df.seqcompany_uuid < seqcompany_folder_df.seqcompany_uuid
+Ref: study_df.study_uuid < study_folder_df.study_uuid
+Ref: tissue_df.tissue_uuid < tissue_folder_df.tissue_uuid
+Ref: treatment_df.treatment_uuid < treatment_folder_df.treatment_uuid
+Ref: cell_line_cell_df.cell_uuid < cell_df.cell_uuid
+Ref: cell_line_cell_df.cell_line_uuid < cell_line_df.cell_line_uuid
+Ref: cell_line_disease_df.disease_uuid < disease_df.disease_uuid
+Ref: cell_line_disease_df.cell_line_uuid < cell_line_df.cell_line_uuid
+Ref: cell_line_gene_df.gene_uuid < gene_df.gene_uuid
+Ref: cell_line_gene_df.cell_line_uuid < cell_line_df.cell_line_uuid
+Ref: cell_line_organism_df.organism_uuid < organism_df.organism_uuid
+Ref: cell_line_organism_df.cell_line_uuid < cell_line_df.cell_line_uuid
+Ref: cell_line_tissue_df.tissue_uuid < tissue_df.tissue_uuid
+Ref: cell_line_tissue_df.cell_line_uuid < cell_line_df.cell_line_uuid
+Ref: disease_gene_df.gene_uuid < gene_df.gene_uuid
+Ref: disease_gene_df.disease_uuid < disease_df.disease_uuid
+Ref: gene_organism_df.organism_uuid < organism_df.organism_uuid
+Ref: gene_organism_df.gene_uuid < gene_df.gene_uuid
+Ref: researcher_institute_df.institute_uuid < institute_df.institute_uuid
+Ref: researcher_institute_df.researcher_uuid < researcher_df.researcher_uuid
+Ref: researcher_lab_df.lab_uuid < lab_df.lab_uuid
+Ref: researcher_lab_df.researcher_uuid < researcher_df.researcher_uuid

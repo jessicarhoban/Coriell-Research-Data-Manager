@@ -1,0 +1,11 @@
+tissue_uuid,cell_line_uuid,tissue_name
+8acabbcc-d364-477e-86a3-60699bd2518d,6ede92ed-a78c-4bbd-ba36-230d2d412c3a,Pancreas
+7600132b-8b0f-4a50-9c6e-95877f7cc2ab,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,Colon
+494aa4f1-56e5-49a5-804b-dd7fd2dbb371,339e8653-fb25-44aa-8813-ce6637557b79,Lymph node
+7600132b-8b0f-4a50-9c6e-95877f7cc2ab,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,Colon
+841cf322-b49c-435a-84a3-4cbe114bfded,a6a454c7-0fbb-4e3a-bbd0-1de737e35c18,Peripheral blood
+8bf71dd8-bfc3-43fa-bd7b-ff1e123c7f87,66104ab8-3e31-4878-b027-8ea4d601f748,Ascites
+841cf322-b49c-435a-84a3-4cbe114bfded,9d9a6b84-b2f0-4979-8fa1-9f941a25a486,Peripheral blood
+841cf322-b49c-435a-84a3-4cbe114bfded,5140e449-2baa-4e4a-bd0a-5b40ff01c0d6,Peripheral blood
+841cf322-b49c-435a-84a3-4cbe114bfded,1bec8d11-f63f-4d33-aecd-89877af728f8,Peripheral blood
+05998652-6acc-4791-a85d-26a94d658520,accc651c-7186-46ca-ab7d-172c802994b7,Pleural effusion

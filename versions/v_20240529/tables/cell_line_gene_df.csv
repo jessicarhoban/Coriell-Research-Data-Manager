@@ -1,0 +1,32 @@
+gene_uuid,cell_line_uuid,molecular_consequence,variant_type,gene_symbol,var_type,zygosity,clinvar,gene_id_hgnc,germline_classification,oncogenicity_classification,clinical_impact_classification,functional_consequence_so,functional_consequence_so_name,functional_consequence_vario,functional_consequence_vario_name
+71a7c80e-9f40-4ad6-a877-da2782e3a405,6ede92ed-a78c-4bbd-ba36-230d2d412c3a,,,CDKN2A,Gene deletion,Homozygous,,1787,,,,,,,
+2a961314-5380-47ac-9209-283de4df9e15,6ede92ed-a78c-4bbd-ba36-230d2d412c3a,missense variant,single nucleotide variant,KRAS,Mutation,Homozygous,VCV000012578,6407,Likely pathogenic,,,[],[],[],[]
+f8f8ac29-49ec-4266-bb15-8c952a3cc3fd,6ede92ed-a78c-4bbd-ba36-230d2d412c3a,missense variant,single nucleotide variant,TP53,Mutation,Homozygous,VCV000012347,11998,Pathogenic,,,[],[],[],[]
+e4d08dcb-83e1-4b8e-bdef-cf8fe54a0e1e,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,nonsense,single nucleotide variant,APC,Mutation,Heterozygous,VCV001071632,583,Pathogenic,,,[],[],[],[]
+e4d08dcb-83e1-4b8e-bdef-cf8fe54a0e1e,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,frameshift variant,Duplication,APC,Mutation,Heterozygous,VCV000428112,583,Pathogenic,,,[],[],[],[]
+d15c02dc-bf0e-4dc5-b776-f4454835782a,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,missense variant,single nucleotide variant,BRAF,Mutation,Heterozygous,VCV000013961,1097,Pathogenic,,Tier I - Strong,['SO:0002053'],['gain_of_function_variant'],[],[]
+46987c09-3198-4064-9eb3-d493e1151789,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,missense variant,single nucleotide variant,PIK3CA,Mutation,Heterozygous,VCV001333250,8975,Pathogenic/Likely pathogenic,,,[],[],[],[]
+b4a08486-787d-46b3-a31f-6275ce8c7eb7,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,nonsense,single nucleotide variant,SMAD4,Mutation,Homozygous,VCV000230663,6770,Pathogenic,,,[],[],[],[]
+f8f8ac29-49ec-4266-bb15-8c952a3cc3fd,c49d0768-ed83-41fd-b23c-6814b0f8c4e6,missense variant,single nucleotide variant,TP53,Mutation,Homozygous,VCV000012366,11998,Pathogenic,,,[],[],[],[]
+71a7c80e-9f40-4ad6-a877-da2782e3a405,339e8653-fb25-44aa-8813-ce6637557b79,,,CDKN2A,Gene deletion,Homozygous,,1787,,,,,,,
+6e2f4d90-b01c-4729-ae3d-f79be61ee2bc,339e8653-fb25-44aa-8813-ce6637557b79,,,CDKN2B,Gene deletion,Homozygous,,1788,,,,,,,
+e4d08dcb-83e1-4b8e-bdef-cf8fe54a0e1e,339e8653-fb25-44aa-8813-ce6637557b79,missense variant,single nucleotide variant,APC,Mutation,Heterozygous,VCV000000829,583,Benign/Likely benign,,,[],[],[],[]
+33cba476-e601-42c4-ad9f-4763c97a3763,339e8653-fb25-44aa-8813-ce6637557b79,missense variant,single nucleotide variant,BRCA2,Mutation,Heterozygous,VCV000038003,1101,Benign/Likely benign,,,[],[],[],[]
+c5f9ecbc-c8b4-4b87-b05e-e1bb0e9fd808,339e8653-fb25-44aa-8813-ce6637557b79,missense variant,single nucleotide variant,NRAS,Mutation,Homozygous,VCV000013900,7989,Pathogenic,,,[],[],[],[]
+f8f8ac29-49ec-4266-bb15-8c952a3cc3fd,339e8653-fb25-44aa-8813-ce6637557b79,,single nucleotide variant,TP53,Mutation,Homozygous,VCV000182970,11998,Pathogenic,,,[],[],[],[]
+1fddb576-ad5b-4ed6-aceb-1f51d4e34a87,339e8653-fb25-44aa-8813-ce6637557b79,missense variant,single nucleotide variant,TSC2,Mutation,Unspecified,VCV000041738,12363,Benign/Likely benign,,,[],[],[],[]
+7206df5d-b704-4d09-9618-4e4f98da507e,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,,,ACVR2A,Mutation,Homozygous,,173,,,,,,,
+e4d08dcb-83e1-4b8e-bdef-cf8fe54a0e1e,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,missense variant,single nucleotide variant,APC,Mutation,Unspecified,VCV000231255,583,Uncertain significance,,,[],[],[],[]
+27e8bc20-0206-4b8a-b00d-b475518e7e1e,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,,,B2M,Mutation,Heterozygous,,914,,,,,,,
+27e8bc20-0206-4b8a-b00d-b475518e7e1e,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,,,B2M,Mutation,Heterozygous,,914,,,,,,,
+22e66ab7-2338-4f8b-812a-17a89b2b3be3,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,missense variant,single nucleotide variant,CTNNB1,Mutation,Heterozygous,VCV000017577,2514,Pathogenic/Likely pathogenic,,,[],[],[],[]
+03a0ec50-dbcc-47f4-bc17-b7609ba7e6cd,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,frameshift variant,Deletion,TGFBR2,Mutation,Homozygous,VCV000477546,11773,Conflicting classifications of pathogenicity,,,[],[],[],[]
+f8f8ac29-49ec-4266-bb15-8c952a3cc3fd,c0bd2252-a040-4e34-bd4b-4ed4128fabd1,,,TP53,Mutation,,,11998,,,,,,,
+32afabd2-fe21-4afc-93df-096bbbf06894,a6a454c7-0fbb-4e3a-bbd0-1de737e35c18,synonymous variant,single nucleotide variant,CYP2C19,Mutation,Unspecified,VCV000016897,2621,Likely benign; other,,,[],[],"['VariO:0375', 'VariO:0043']","['cryptic splice acceptor activation', 'protein loss of function']"
+87c70aa7-72eb-4237-84f7-cbd40e586933,66104ab8-3e31-4878-b027-8ea4d601f748,,,MET,Mutation,Unspecified,,7029,,,,,,,
+e0fd29c2-9809-4abe-843c-61aec5f0cce3,1bec8d11-f63f-4d33-aecd-89877af728f8,,,AFF1,Gene fusion,,,7135,,,,,,,
+7e2c20b0-aabf-4ae9-8963-807e785f93f8,1bec8d11-f63f-4d33-aecd-89877af728f8,,Duplication,FLT3,Mutation,Unspecified,VCV000016270,3765,Pathogenic,,,[],[],[],[]
+71a7c80e-9f40-4ad6-a877-da2782e3a405,accc651c-7186-46ca-ab7d-172c802994b7,,,CDKN2A,Gene deletion,Homozygous,,1787,,,,,,,
+c8a7c659-3186-4918-86e0-192cf90e256d,accc651c-7186-46ca-ab7d-172c802994b7,,,GATA3,Mutation,Heterozygous,,4172,,,,,,,
+46987c09-3198-4064-9eb3-d493e1151789,accc651c-7186-46ca-ab7d-172c802994b7,missense variant,single nucleotide variant,PIK3CA,Mutation,Heterozygous,VCV000013655,8975,Pathogenic/Likely pathogenic,,,['SO:0002053'],['gain_of_function_variant'],[],[]
+f8f8ac29-49ec-4266-bb15-8c952a3cc3fd,accc651c-7186-46ca-ab7d-172c802994b7,,,TP53,Mutation,,,11998,,,,,,,

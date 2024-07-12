@@ -1,0 +1,42 @@
+gene_id_hgnc,gene_id_ncbi,gene_name,organism_name,organism_id_ncbi,gene_symbol,gene_uuid,molecular_consequence,variant_type,var_type,zygosity,clinvar,germline_classification,oncogenicity_classification,clinical_impact_classification,functional_consequence_so,functional_consequence_so_name,functional_consequence_vario,functional_consequence_vario_name
+713,410,Arylsulfatase A (ARSA),Human,9606,ARSA,25bd1ac2-e4bf-4c27-a0ed-743eb87d71c3,,,,,,,,,,,,
+11271,10251,Sprouty RTK Signaling Antagonist 3 (SPRY3),Human,9606,SPRY3,6c62f958-6274-4de8-ab59-a311a0eedbe4,,,,,,,,,,,,
+15533,81848,Sprouty RTK Signaling Antagonist 4 (SPRY4),Human,9606,SPRY4,0406c0bf-2f99-4cae-8506-6a203f2a5888,,,,,,,,,,,,
+43904,100419743,D4Z4 Binding Element Transcript (DBET),Human,9606,DBET,c4bc0795-a83d-4ad9-b082-79fee542e69f,,,,,,,,,,,,
+18318,171023,ASXL Transcriptional Regulator 1 (ASXL1),Human,9606,ASXL1,da140f3e-8e6e-4490-b405-4ae2159a73a9,,,,,,,,,,,,
+13045,90987,Zinc Finger Protein 251 (ZNF251),Human,9606,ZNF251,0ab0235a-e1db-4216-91e2-6ef964a4f8ab,,,,,,,,,,,,
+25941,54790,Tet Methylcytosine Dioxygenase 2 (TET2),Human,9606,TET2,2de432be-a7fc-4601-ac2e-73050f523d6f,,,,,,,,,,,,
+2978,1788,DNA Methyltransferase 3 Alpha (DNMT3A),Human,9606,DNMT3A,7fb97ea0-68f6-4feb-881e-48e355257be8,,,,,,,,,,,,
+2896,1737,Dihydrolipoamide S-acetyltransferase (DLAT),Human,9606,DLAT,ccaf59b0-98f0-41ec-a1c3-77364ec61ba2,,,,,,,,,,,,
+18047,83401,ELOVL Fatty Acid Elongase 3 (ELOVL3),Human,9606,ELOVL3,a19c6fbb-b3e0-4499-893a-b4904f50491f,,,,,,,,,,,,
+11998,7157,Tumor Protein (P53),Human,9606,P53,f8f8ac29-49ec-4266-bb15-8c952a3cc3fd,,,,,,,,,,,,
+25035,55432,YOD1 Deubiquitinase (YOD1),Human,9606,YOD1,532978c2-e398-46e1-9c16-493c4fd286b2,,,,,,,,,,,,
+8806,5160,Pyruvate Dehydrogenase E1 Subunit Alpha 1 (PDHA1),Human,9606,PDHA1,9251631f-8ac0-4d4b-97ea-732ba2ef4804,,,,,,,,,,,,
+8808,5162,Pyruvate Dehydrogenase E1 Subunit Beta (PDHB),Human,9606,PDHB,2baf63ec-9638-4b1b-b7dc-308c22e4b1ca,,,,,,,,,,,,
+1775,8851,Cyclin-Dependent Kinase 5 Regulatory Subunit 1 (CDK5R1),Human,9606,CDK5R1,fb5828bd-fac8-4cee-939a-bac6c977e7da,,,,,,,,,,,,
+1780,1025,Cyclin-Dependent Kinase 9 (CDK9),Human,9606,CDK9,62ebd616-25e9-4e3b-80ab-3b030240f678,,,,,,,,,,,,
+5362,3399,Inhibitor Of DNA Binding 3 (ID3),Mouse,1758,ID3,832a8717-a584-4a70-a4fa-6a084e666a52,,,,,,,,,,,,
+,,Histone 3 (K9me3) Bivalent Methylation Factor,,,K9me3,25fa63be-0153-4736-8369-c8414ccb0cf4,,,,,,,,,,,,
+,,EBV Nuclear Antigen (EBNA),,,EBNA,7bde49a6-745c-47e8-8ef5-cf7d7ae06326,,,,,,,,,,,,
+,,Matrix metalloproteinases (MMPs),Mouse,1758,MMPs,3c49fe90-3e64-4ed2-b8fa-91771f495d0c,,,,,,,,,,,,
+,,Ecotropic Viral Integration (EVI),Mouse,1758,EVI,b502edae-e99c-46da-8fdc-0ece5518948a,,,,,,,,,,,,
+,,Ten Eleven Translocation (TET),Mouse,1758,TET,78b580ce-0908-499b-a322-cabc8edffe2f,,,,,,,,,,,,
+1787,,,,,CDKN2A,71a7c80e-9f40-4ad6-a877-da2782e3a405,,,Gene deletion,Homozygous,,,,,,,,
+6407,,,,,KRAS,2a961314-5380-47ac-9209-283de4df9e15,missense variant,single nucleotide variant,Mutation,Homozygous,VCV000012578,Likely pathogenic,,,[],[],[],[]
+583,,,,,APC,e4d08dcb-83e1-4b8e-bdef-cf8fe54a0e1e,nonsense,single nucleotide variant,Mutation,Heterozygous,VCV001071632,Pathogenic,,,[],[],[],[]
+1097,,,,,BRAF,d15c02dc-bf0e-4dc5-b776-f4454835782a,missense variant,single nucleotide variant,Mutation,Heterozygous,VCV000013961,Pathogenic,,Tier I - Strong,['SO:0002053'],['gain_of_function_variant'],[],[]
+8975,,,,,PIK3CA,46987c09-3198-4064-9eb3-d493e1151789,missense variant,single nucleotide variant,Mutation,Heterozygous,VCV001333250,Pathogenic/Likely pathogenic,,,[],[],[],[]
+6770,,,,,SMAD4,b4a08486-787d-46b3-a31f-6275ce8c7eb7,nonsense,single nucleotide variant,Mutation,Homozygous,VCV000230663,Pathogenic,,,[],[],[],[]
+1788,,,,,CDKN2B,6e2f4d90-b01c-4729-ae3d-f79be61ee2bc,,,Gene deletion,Homozygous,,,,,,,,
+1101,,,,,BRCA2,33cba476-e601-42c4-ad9f-4763c97a3763,missense variant,single nucleotide variant,Mutation,Heterozygous,VCV000038003,Benign/Likely benign,,,[],[],[],[]
+7989,,,,,NRAS,c5f9ecbc-c8b4-4b87-b05e-e1bb0e9fd808,missense variant,single nucleotide variant,Mutation,Homozygous,VCV000013900,Pathogenic,,,[],[],[],[]
+12363,,,,,TSC2,1fddb576-ad5b-4ed6-aceb-1f51d4e34a87,missense variant,single nucleotide variant,Mutation,Unspecified,VCV000041738,Benign/Likely benign,,,[],[],[],[]
+173,,,,,ACVR2A,7206df5d-b704-4d09-9618-4e4f98da507e,,,Mutation,Homozygous,,,,,,,,
+914,,,,,B2M,27e8bc20-0206-4b8a-b00d-b475518e7e1e,,,Mutation,Heterozygous,,,,,,,,
+2514,,,,,CTNNB1,22e66ab7-2338-4f8b-812a-17a89b2b3be3,missense variant,single nucleotide variant,Mutation,Heterozygous,VCV000017577,Pathogenic/Likely pathogenic,,,[],[],[],[]
+11773,,,,,TGFBR2,03a0ec50-dbcc-47f4-bc17-b7609ba7e6cd,frameshift variant,Deletion,Mutation,Homozygous,VCV000477546,Conflicting classifications of pathogenicity,,,[],[],[],[]
+2621,,,,,CYP2C19,32afabd2-fe21-4afc-93df-096bbbf06894,synonymous variant,single nucleotide variant,Mutation,Unspecified,VCV000016897,Likely benign; other,,,[],[],"['VariO:0375', 'VariO:0043']","['cryptic splice acceptor activation', 'protein loss of function']"
+7029,,,,,MET,87c70aa7-72eb-4237-84f7-cbd40e586933,,,Mutation,Unspecified,,,,,,,,
+7135,,,,,AFF1,e0fd29c2-9809-4abe-843c-61aec5f0cce3,,,Gene fusion,,,,,,,,,
+3765,,,,,FLT3,7e2c20b0-aabf-4ae9-8963-807e785f93f8,,Duplication,Mutation,Unspecified,VCV000016270,Pathogenic,,,[],[],[],[]
+4172,,,,,GATA3,c8a7c659-3186-4918-86e0-192cf90e256d,,,Mutation,Heterozygous,,,,,,,,

@@ -1,0 +1,30 @@
+gene_uuid,gene_name,search_term,folder_uuid,folder_name
+c9bcbee7-aef2-49ae-8a11-bcbf0303ef55,Cyclin-Dependent Kinase 9 (CDK9),cdk9,1200796e-2bfd-46e9-94f9-5eba8c66657e,2019-06-06_cutrun_som
+eb94e836-b0d2-4da4-b072-d9221ffbee8d,Histone 3 (K9me3) Bivalent Methylation Factor,k9me3,1200796e-2bfd-46e9-94f9-5eba8c66657e,2019-06-06_cutrun_som
+c0553c67-f20c-4bed-a2bf-b0f9bed79801,Ecotropic Viral Integration (EVI), evi,9737421c-2bb2-4fff-bdfa-b64cff285020,2020-07-31_scrnaseq_10x_jian
+45c8bd68-08d4-4fd6-8a82-f2b0e58f1d7f,Ten Eleven Translocation (TET), tet,9737421c-2bb2-4fff-bdfa-b64cff285020,2020-07-31_scrnaseq_10x_jian
+2edf4e04-793b-4be0-88e1-1901bf050a6d,Sprouty RTK Signaling Antagonist 3 (SPRY3),spry3,762511c9-d7ed-4760-ae4c-596a66c6ab4c,2023-01-10_rnaseq_human_jian2
+15f202cc-129c-4823-89a9-6a639bbcea11,Sprouty RTK Signaling Antagonist 4 (SPRY4),spry4,762511c9-d7ed-4760-ae4c-596a66c6ab4c,2023-01-10_rnaseq_human_jian2
+5520874c-56ed-4905-aac2-86113bf9f9ef,Tumor Protein (P53),p53,9531b2cb-b793-4398-a169-9716c84c2aa0,2023-01-19_crispr_zhaorui_human
+5bd13870-be52-4b8a-b39a-18bb0d005950,D4Z4 Binding Element Transcript (DBET),dbet,cd82b395-7bd2-4249-b769-3b28104e839f,2022-10-11_rnaseq_yb5_almedia
+985e691d-398e-4320-93ea-d2429d58609d,Inhibitor Of DNA Binding 3 (ID3),id3,b6caff24-5874-42ff-8d85-7f4664c112cc,2022-05-10_ying_wang_atacseq
+29a9a06e-7491-481b-8b52-7628c8e23cac,Matrix metalloproteinases (MMPs),mmp,2a465e72-4f12-4823-ad94-13eb467e6811,2023-01-17_scrnaseq_mouse_jian_novogene
+1c83a834-625d-4cbe-be00-ccc1f821cb79,Zinc Finger Protein 251 (ZNF251),znf251,157b13d9-d64b-4845-9076-7958a2c5218c,2023-05-07_zhaorui_znf251_ko_grna3
+4c40a942-3198-4c3f-a51a-cdc95c57f5eb,Cyclin-Dependent Kinase 5 Regulatory Subunit 1 (CDK5R1),cdk5r1,50843705-9df5-4d23-beee-8bd9a7b8041b,2023-06-10_miseq_cdk5r1_crispr_diego
+c4c0b19b-fadc-4688-b8d8-9855b0ebd35c,DNA Methyltransferase 3 Alpha (DNMT3A),dnmt3a,76f89445-d9e9-4626-9c2c-10cf77b01fb5,2021-08-23_dnmt3a
+17f106de-cc0c-4459-a89e-317d4e81f97a,ASXL Transcriptional Regulator 1 (ASXL1),asxl1,e8225905-f35b-44c0-8bfd-40bb7a28ae3c,2021-08-27_ampliseq
+b9f3b715-cbfe-4cd7-a7d5-7b9c13c9999b,Tet Methylcytosine Dioxygenase 2 (TET2),tet2,e8225905-f35b-44c0-8bfd-40bb7a28ae3c,2021-08-27_ampliseq
+c4c0b19b-fadc-4688-b8d8-9855b0ebd35c,DNA Methyltransferase 3 Alpha (DNMT3A),dnmt3a,e8225905-f35b-44c0-8bfd-40bb7a28ae3c,2021-08-27_ampliseq
+45c8bd68-08d4-4fd6-8a82-f2b0e58f1d7f,Ten Eleven Translocation (TET), tet,e8225905-f35b-44c0-8bfd-40bb7a28ae3c,2021-08-27_ampliseq
+e4b89dd4-4955-4f36-838f-02a12d15a7e0,Dihydrolipoamide S-acetyltransferase (DLAT),dlat,1944e559-f691-4323-8191-181e00c25d07,2023-02-23_atavistik
+c9529d3d-fa74-4ce1-abe6-41af72c4eacd,Pyruvate Dehydrogenase E1 Subunit Alpha 1 (PDHA1),pdha1,1944e559-f691-4323-8191-181e00c25d07,2023-02-23_atavistik
+2dddb6c9-fa22-4431-b814-95f2706044f6,Pyruvate Dehydrogenase E1 Subunit Beta (PDHB),pdhb,1944e559-f691-4323-8191-181e00c25d07,2023-02-23_atavistik
+2edf4e04-793b-4be0-88e1-1901bf050a6d,Sprouty RTK Signaling Antagonist 3 (SPRY3),spry3,8e9616d8-4599-47ff-9ebe-c0d00d1029f2,2022-12-13_rnaseq_human_jian
+e345c60c-4369-49b2-ab54-36a5f6282305,Arylsulfatase A (ARSA),arsa,94a3b215-367d-4ac9-bc86-73d8c728edfb,2022-05-06_arsa_mplex2
+c4c0b19b-fadc-4688-b8d8-9855b0ebd35c,DNA Methyltransferase 3 Alpha (DNMT3A),dnmt3a,df3b4ad9-db9c-428d-a395-eef85895899b,2021-08-11_dnmt3a_mplex_blood_saliva
+30769247-5cb0-4709-9ed9-e39f9d04d2aa,YOD1 Deubiquitinase (YOD1),yod1,83cf2a02-bc7c-4e26-b226-2b87cdcd407d,2023-05-15_crispr_shoghag_yod1_c10orf125
+d38a29e8-8e7d-40c2-852f-e10c4f05fd45,EBV Nuclear Antigen (EBNA),ebna,7a500eac-d682-4294-b36a-fc7a5d4f59e1,2021-04-16_rrbs70-71_italo_human
+e345c60c-4369-49b2-ab54-36a5f6282305,Arylsulfatase A (ARSA),arsa,ff17ed56-6c17-44c7-be4a-a06b8ea774c8,2022-04-30_arsa_mplex1
+e345c60c-4369-49b2-ab54-36a5f6282305,Arylsulfatase A (ARSA),arsa,84a70826-d4da-4014-8212-ba85204a7675,2022-05-07_arsa_merge_mplex12
+985e691d-398e-4320-93ea-d2429d58609d,Inhibitor Of DNA Binding 3 (ID3),id3,b8374a6a-dce4-4fbe-9ca9-fc1ec7703f6c,2022-05-19_ying_wang_rnaseq
+fd1d9fbe-6d8c-46cc-a800-16cd345111fe,ELOVL Fatty Acid Elongase 3 (ELOVL3),elov13,33c13e23-6791-49c8-9497-8110714ca21d,2021-06-30_bis_amplicon_blood_aging

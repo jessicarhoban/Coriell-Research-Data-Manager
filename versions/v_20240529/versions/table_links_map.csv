@@ -1,0 +1,7 @@
+﻿table1_name,table2_name,table1_mergecol,table2_mergecol,table1_colstobring,table2_colstobring
+researcher,lab,lab,lab_name,,
+researcher,institute,institute,institute_name,,
+gene,organism,taxonomy_id_ncbi,taxonomy_id_ncbi,,
+cell_line,disease,disease_id_ncit,disease_id_ncit,"disease_type,disease_grade",
+cell_line,cell,cell_id_uberon,cell_id_uberon,,
+cell_line,tissue,tissue_id_uberon,tissue_id_uberon,,
