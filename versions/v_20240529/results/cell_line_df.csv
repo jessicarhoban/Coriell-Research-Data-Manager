@@ -1,0 +1,17 @@
+type,cellosaurus_id,mgi_id,coriell_id,description,search_term,cell_line_name,cell_line_symbol,organism,age,sex,population,biopsy_source,tissue_type,tissue_id_uberon,cell_type,cell_id_uberon,category,sub_category,transformant,morphology,disease_category,disease_name,disease_type,disease_grade,disease_id_ncit,product_format,storage_conditions,atcc_id,cell_line_uuid
+cell_line,CVCL_0428,,,,,MIA PaCa-2,,,65Y,Male,Caucasian,,,,,,,,,,,,,,,,,CRL-1420,6ede92ed-a78c-4bbd-ba36-230d2d412c3a
+cell_line,CVCL_0320,,,,,HT-29,,,44Y,Female,Caucasian,,,,,,,,,,,,,,,,,HTB-38,c49d0768-ed83-41fd-b23c-6814b0f8c4e6
+cell_line,CVCL_3985,,,,,BON-1,,,28Y,Male,,,,,,,,,,,,,,,,,,,339e8653-fb25-44aa-8813-ce6637557b79
+cell_line,CVCL_1724,,,,,SW48,,,83Y,Female,Caucasian,,,,,,,,,,,,,,,,,CCL-231,c0bd2252-a040-4e34-bd4b-4ed4128fabd1
+strain,,MGI:2160625,,,apcmin,C57BL/6-Apc<Min>,,,,,,,,,,,mutant strain,,,,,,,,,,,,2939dc7e-d435-4896-9437-8989d914189d
+donor,,,,,gu114,GU114,,Human,,,,,,,,,,,,,,,,,,,,,96dfa383-6976-44f2-a51c-942e8252e9e6
+cell_line,CVCL_7526,,GM12878,,,GM12878,,,Age unspecified,Female,Caucasian,,,,,,,,,,,,,,,,,,a6a454c7-0fbb-4e3a-bbd0-1de737e35c18
+strain,,MGI:2159769,,,b6,C57BL/6,,,,,,,,,,,strain family,,,,,,,,,,,,e09c0b24-4e55-4487-9d40-9b73b5a238ec
+cell_line,CVCL_9647,,,,,YCCEL1,,,64Y,Male,Korean,,,,,,,,,,,,,,,,,,66104ab8-3e31-4878-b027-8ea4d601f748
+cell_line,CVCL_L061,,,,,NALM-13,,,19Y,Male,Caucasian,,,,,,,,,,,,,,,,,,9d9a6b84-b2f0-4979-8fa1-9f941a25a486
+cell_line,CVCL_QX00,,,,,NALM-14,,,,,,,,,,,,,,,,,,,,,,,5140e449-2baa-4e4a-bd0a-5b40ff01c0d6
+cell_line,CVCL_9W75,,GM00538,,,GM00538,,,1Y6M,Female,Caucasian,,,,,,,,,,,,,,,,,,2b4e8678-2f52-4a62-b570-13284ea106b5
+cell_line,CVCL_0064,,,,,MV4-11,,,10Y,Male,Caucasian,,,,,,,,,,,,,,,,,CRL-9591,1bec8d11-f63f-4d33-aecd-89877af728f8
+cell_line,,,NA12878,,na12878,NA12878,,Human,,,,,,,,,,,,,,,,,,,,,9f90a47c-71b5-4abb-bf4c-8faae7ac4805
+cell_line,CVCL_0031,,,,,MCF-7,,,69Y,Female,Caucasian,,,,,,,,,,,,,,,,,HTB-22,accc651c-7186-46ca-ab7d-172c802994b7
+strain,,MGI:3050593,,,129svev,129S/SvEv,,,,,,,,,,,inbred strain,,,,,,,,,,,,4dc622bb-79ef-4a58-b910-fe92272a24d6
