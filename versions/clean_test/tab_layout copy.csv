@@ -1,0 +1,17 @@
+tab_name,table_name,table_uuid,column_name,column_title,level,multiselect,Change to Column
+Biomaterial,biomaterial,biomaterial_uuid,biomaterial_name,Biomaterial Name,by_sample,one,TRUE
+Biomaterial,biomaterial,biomaterial_uuid,biomaterial_type,Biomaterial Type,by_sample,one,TRUE
+Biomaterial,biomaterial,biomaterial_uuid,biomaterial_subtype,Biomaterial Subtype,by_sample,one,TRUE
+Biomaterial,organism,organism_uuid,organism_name,Organism,by_sample,one,TRUE
+Biomaterial,cell_line,cell_line_uuid,cell_line_name,Cell Line,by_sample,one,TRUE
+Biomaterial,cell,cell_uuid,cell_name,Cell,by_sample,one,TRUE
+Biomaterial,tissue,tissue_uuid,tissue_name,Tissue,by_sample,one,TRUE
+Biomaterial,disease,disease_uuid,disease_name,Disease,by_sample,many,FALSE
+Study Design,experiment,experiment_uuid,experiment_name,Experiment,by_folder,one,TRUE
+Study Design,treatment,treatment_uuid,treatment_name,Treatment,by_folder,many,FALSE
+Study Design,seqcompany,seqcompany_uuid,seqcompany_name,Sequencing Company,by_folder,one,TRUE
+Collaborators,lab,lab_uuid,lab_name,Lab,by_folder,many,FALSE
+Collaborators,researcher,researcher_uuid,researcher_name,Researcher,by_folder,many,FALSE
+Collaborators,institute,institute_uuid,institute_name,Institute,by_folder,many,FALSE
+Collaborators,study,study_uuid,study_name,Study,by_folder,many,FALSE
+Gene,gene,gene_uuid,gene_name,Gene,by_sample,many,FALSE

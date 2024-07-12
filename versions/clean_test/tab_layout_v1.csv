@@ -1,0 +1,124 @@
+﻿tab_name,table_view_editable,table_view,table_name,table_title,table_uuid,level,widget_type,height,column_name,column_title,for_geo,geo_tab,geo_file_section,Allow multiple?,geo_required?,geo_file_title,geo_description
+Overview,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,30,title,Title,TRUE,Metadata,STUDY,FALSE,TRUE,title,Unique title (fewer than 255 characters) that describes the overall study.  A working title from the associated manuscript may be suitable.
+Overview,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,200,summary,Summary (Abstract),TRUE,Metadata,STUDY,FALSE,TRUE,summary (abstract),Thorough description of the goals and objectives of this study.  A working abstract from the associated manuscript may be suitable.  Include as much text as necessary.
+Overview,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,100,experimental_design,Experimental Design,TRUE,Metadata,STUDY,FALSE,TRUE,experimental design,"Describe the type of SAMPLES included in the submission, as well as the experimental conditions and variables under investigation.
+
+Include what types of Samples are analyzed, if replicates are included, are there control and/or reference Samples, etc.
+
+Do not include protocols/methods.
+
+Still not sure what to include?  
+Refer to the ""experimental design"" in the EXAMPLE sheets."
+Collaborators,researcher_folder,researcher_folder,researcher,Collaborator,researcher_uuid,by_folder,MultiChoice (many),,researcher_name,Contributer,TRUE,Metadata,STUDY,TRUE,FALSE,contributor,"Format:  Firstname, Initial, Lastname
+
+Example:  Jane, Doe
+Example:  Yixin, Wang
+Example:  John, H, Smith
+Example:  Charles,E,Determan Jr
+Example:  Monique,G,van der Wijst
+Example:  Mark, Anderson Dumont
+
+Each contributor on a separate line.
+Add as many contributor lines as needed."
+Collaborators,lab_folder,v_folder_lab,lab,Lab,lab_uuid,by_folder,MultiChoice (many),,lab_name,Lab,FALSE,,,,,,
+Collaborators,institute_folder,v_folder_institute,institute,Institue,institute_uuid,by_folder,MultiChoice (many),,institute_name,Institute,FALSE,,,,,,
+Collaborators,study_folder,study_folder,study,Study,study_uuid,by_folder,MultiChoice (many),,study_name,Study,FALSE,,,,,,
+Protocol,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,30,growth_protocol,Growth Protocol,TRUE,Metadata,PROTOCOLS,FALSE,FALSE,growth protocol,[Optional]  Describe the conditions used to grow or maintain organisms or cells prior to extract preparation.
+Protocol,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,30,treatment_protocol,Treatment Protocol,TRUE,Metadata,PROTOCOLS,FALSE,FALSE,treatment protocol,[Optional] Describe the treatments applied to the biological material prior to extract preparation.
+Protocol,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,30,extract_protocol,Extract Protocol,TRUE,Metadata,PROTOCOLS,FALSE,TRUE,extract protocol,Describe the protocols used to extract and prepare the material to be sequenced. 
+Protocol,,,folder,Folder,folder_uuid,by_folder,TextAreaInput,30,library_construction_protocol,Library Construction Protocol,TRUE,Metadata,PROTOCOLS,FALSE,TRUE,library construction protocol,Describe the library construction protocol.
+Protocol,experiment_folder,experiment_folder,experiment,Experiment,experiment_uuid,by_folder,MultiChoice (one),,experiment_name,Library Strategy,TRUE,Metadata,PROTOCOLS,FALSE,TRUE,library strategy,"A Sequence Read Archive-specific field that describes the sequencing technique for each library. 
+
+Please enter one of the following terms:
+
+RNA-Seq
+scRNA-seq
+miRNA-Seq
+ncRNA-Seq
+ChIP-Seq
+ATAC-seq
+Bisulfite-Seq
+Bisulfite-Seq (reduced representation)
+Spatial Transcriptomics
+CITE-seq
+CUT&Run
+CUT&Tag
+MNase-Seq
+Hi-C
+MBD-Seq
+MRE-Seq
+MeDIP-Seq
+DNase-Hypersensitivity
+Tn-Seq
+FAIRE-seq
+SELEX
+RIP-Seq
+ChIA-PET
+
+BRU-Seq
+CRISPR Screen
+Capture-C
+ChEC-seq
+ChIRP-seq
+DamID-Seq
+EM-seq
+GRO-Seq
+HiChIP
+MeRIP-Seq
+PRO-Seq
+RNA methylation
+Ribo-Seq
+TCR-Seq
+BCR-Seq
+iCLIP
+smallRNA-Seq
+snRNA-Seq
+ssRNA-Seq
+RNA-Seq (CAGE)
+RNA-Seq (RACE)
+16S rRNA-seq
+4C-Seq
+
+OTHER: specify"
+Protocol,organism_folder,v_folder_organism,organism,Organism,organism_uuid,by_folder,MultiChoice (one),,organism_name,Organism,TRUE,Metadata,SAMPLES,FALSE,TRUE,organism,
+Sample (Biomaterial),,,biomaterial,Biomaterial,biomaterial_uuid,by_sample,MultiChoice (one),,biomaterial_name,Biomaterial,,,,,,,
+Sample (Biomaterial),,,cell_line,Cell Line,cell_line_uuid,by_sample,MultiChoice (one),,cell_line_name,Cell Line,TRUE,Metadata,SAMPLES,FALSE,TRUE (one of group A),cell line,
+Sample (Biomaterial),,,cell,Cell,cell_uuid,by_sample,MultiChoice (one),,cell_name,Cell Type,TRUE,Metadata,SAMPLES,FALSE,TRUE (one of group A),cell type,
+Sample (Biomaterial),,,tissue,Tissue,tissue_uuid,by_sample,MultiChoice (one),,tissue_name,Tissue,TRUE,Metadata,SAMPLES,FALSE,TRUE (one of group A),tissue,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,breed,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,disease state,
+,,,,,,,,,,,,,,,,tumor stage,
+,,,,,,,,,,,,,,,,ChIP antibody,

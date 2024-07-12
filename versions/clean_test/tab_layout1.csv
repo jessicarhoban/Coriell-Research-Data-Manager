@@ -1,0 +1,14 @@
+table_view_editable,table_view,table_title,table_name,table_uuid,columns,tab_name
+biomaterial_folder,v_folder_biomaterial,Biomaterial,biomaterial,biomaterial_uuid,"{'key': ['biomaterial_name', 'biomaterial_type', 'biomaterial_subtype'], 'value': ['Biomaterial Name', 'Biomaterial Type', 'Biomaterial Subtype']}",Biomaterial
+organism_folder,v_folder_organism,Organism,organism,organism_uuid,"{'key': ['organism_name'], 'value': ['Organism Name']}",Biomaterial
+cell_line_folder,cell_line_folder,Cell Line,cell_line,cell_line_uuid,"{'key': ['cell_line_name'], 'value': ['Cell Line Name']}",Biomaterial
+cell_folder,cell_folder,Cell,cell,cell_uuid,"{'key': ['cell_name'], 'value': ['Cell Name']}",Biomaterial
+tissue_folder,v_folder_tissue,Tissue,tissue,tissue_uuid,"{'key': ['tissue_name'], 'value': ['Tissue Name']}",Biomaterial
+disease_folder,v_folder_disease,Disease,disease,disease_uuid,"{'key': ['disease_name'], 'value': ['Disease Name']}",Biomaterial
+experiment_folder,experiment_folder,Experiment,experiment,experiment_uuid,"{'key': ['experiment_name'], 'value': ['Experiment Name']}",Study Design
+treatment_folder,treatment_folder,Treatment,treatment,treatment_uuid,"{'key': ['treatment_name'], 'value': ['Treatment Name']}",Study Design
+seqcompany_folder,seqcompany_folder,Sequencing Company,seqcompany,seqcompany_uuid,"{'key': ['seqcompany_name'], 'value': ['Sequencing Company Name']}",Study Design
+lab_folder,v_folder_lab,Lab,lab,lab_uuid,"{'key': ['lab_name'], 'value': ['Lab Name']}",Collaborators
+researcher_folder,researcher_folder,Researcher,researcher,researcher_uuid,"{'key': ['researcher_name'], 'value': ['Researcher Name']}",Collaborators
+institute_folder,v_folder_institute,Institute,institute,institute_uuid,"{'key': ['institute_name'], 'value': ['Institute Name']}",Collaborators
+study_folder,study_folder,Study,study,study_uuid,"{'key': ['study_name'], 'value': ['Study Name']}",Collaborators
