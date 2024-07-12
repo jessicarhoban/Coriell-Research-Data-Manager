@@ -1,0 +1,17 @@
+biomaterial_type,biomaterial_subtype,biomaterial_name,biomaterial_symbol,biomaterial_uuid
+Cell Line,,Cell Line (NOS),,2df2dd66-7e1e-4d4e-aaf9-e4387299a2f6
+Cell Line,Primary,Primary Cell Line (NOS),,ed029f81-9734-4e7c-a16c-d6182bb226aa
+Cell Line,Immortalized,Lymphoblastoid Cell Lines (LCLs),LCL,b783a538-5127-4b9e-876e-6339e741d6e7
+Cell Line,Immortalized,Immortalized Cell Line (NOS),,590c4642-f6ca-4fac-8ecb-8619b27e09fc
+Cell Line,Stem Cell,Stem Cell Line (NOS),,59b03a7d-8dee-44bc-8bbd-17819f2a9a1c
+Cell Line,Stem Cell,Hematopoietic Stem Cells (HSCs),HSC,447b389d-80ce-4467-ac7e-a594cdf11012
+Cell Line,Stem Cell,Embryonic Stem Cells (ESCs),ESC,c9ce2cfd-6c24-4976-ba40-293a36d8f2cf
+Cell Line,Stem Cell-Derived,Stem Cell-Derived Line (NOS),,5fb10089-a67d-4c3a-b163-e977086d7bfb
+Cell Line,Induced Pluripotent,Induced Pluripotent Stem Cells (iPSCs),iPSC,48d25547-12fc-460b-b1f6-e9264afaf95d
+Cell Line,Synthetic,Synthetic Cell Line (NOS),,aea587a8-92fb-4571-95bf-ccfad11c8ec2
+Cell Suspension,,Cell Suspension (NOS),,dec65d83-0c00-433d-ac12-f24708d32bb5
+Donor Organism,,Donor Organism,,afee3f0e-b67e-406f-a8d7-bfe7da72fd8b
+Specimen from Organism,Donor Tissue,Donor Tissue (Post-mortem),,03a5e8fb-26c9-4063-a87d-324504491805
+Specimen from Organism,Donor Tissue,Donor Tissue (Living donor),,a58a6cc9-1781-4497-8212-ef50f8babefc
+Specimen from Organism,Donor Tissue,Donor Tissue (NOS),,dc24f883-b3d6-47c8-b865-6ac89ed93124
+Organoid,,Organoid,,62cbbcf9-3bc6-45b1-9b68-a818544887d9

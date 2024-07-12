@@ -1,0 +1,7 @@
+treatment_name,treatment_id_pubchem,treatment_uuid,treatment_symbol
+Dimethyl Sulfoxide (DMSO),679,bf2f92c4-2013-481f-b76f-a7366939b664,DMSO
+Decitabine (DAC),451668,0c5deebf-8a32-4cc1-8ae3-ba5b6954c9cf,DAC
+Proteolysis Targeting Chimera (PROTAC),,01c06a8b-996d-46ce-b8de-58509ba71136,PROTAC
+Olaparib,23725625,d5d80940-a211-4233-9d00-81d98e3079bb,
+Gilterinib,49803313,5a1da1f4-1598-4bc0-bfc3-17b66191a53a,
+5-Azacytidine (5-aza),9444,d9c94795-70d3-4815-9f58-cfbbfd13b084,5-aza

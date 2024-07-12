@@ -1,0 +1,15 @@
+disease_category,disease_name,disease_symbol,disease_id_ncit,disease_uuid
+Cancer,Pancreatic ductal adenocarcinoma (PDA),PDA,C9120,b00ea0d9-0959-4569-8dec-4df2d83373a6
+Cancer,Colon adenocarcinoma,,C4349,91ccc979-1d22-4759-957b-6140fa602bc5
+Cancer,Pancreatic serotonin-producing neuroendocrine tumor,,C4446,77cb3ecb-3c41-450a-9006-f3c2c066eef7
+Cancer,Prostate carcinoma,,C4863,9d579ec5-93db-4814-971c-61c94adf0b5f
+Cancer,Gastric adenocarcinoma,,C4004,ac42ef6c-4590-42dd-9432-5655678f6443
+Cancer,Adult B acute lymphoblastic leukemia (ALL),ALL,C9143,42a7735e-36f8-4757-b035-40d9ac7ddaaf
+Disorders of Carbohydrate Metabolism,Maroteaux-Lamy syndrome (MPS 6),MPS 6,C61264,93a9177a-67c5-43bd-b556-cddd58221053
+Cancer,Childhood acute monocytic leukemia,,C9163,be1cc2bb-ee87-4b46-9e83-01e4c8b42aa6
+Cancer,Breast adenocarcinoma,,C5214,70c6ad9d-b119-465b-bb40-0d9c74637c2c
+Cancer,Leukemia,,C3161,7e33a023-ab8c-47dc-8883-4d63f45771ef
+Neurodegenerative Disease,Parkinson Disease,,C26845,a0dc38a3-3d9d-4664-bfc4-c6c2d7ceb89f
+Cancer,Chronic Myeloid Leukemia (CML),CML,,61ebc941-46ff-404d-9dcb-f0eae793d948
+Cancer,Acute Myeloid Leukemia (AML),AML,C3171,4c4b1797-257e-446d-8e6a-909beef4b5c7
+Cancer,Invasive breast carcinoma of no special type,,C4194,d1b492ce-bb24-417c-aa60-137406ed834a

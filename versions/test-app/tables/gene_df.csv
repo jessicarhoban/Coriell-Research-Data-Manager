@@ -1,0 +1,37 @@
+gene_id_hgnc,gene_id_ncbi,gene_name,gene_symbol,gene_uuid
+713,410,Arylsulfatase A (Arsa) (ARSA),ARSA,25bd1ac2-e4bf-4c27-a0ed-743eb87d71c3
+11271,10251,Sprouty Rtk Signaling Antagonist 3 (Spry3) (SPRY3),SPRY3,6c62f958-6274-4de8-ab59-a311a0eedbe4
+15533,81848,Sprouty Rtk Signaling Antagonist 4 (Spry4) (SPRY4),SPRY4,0406c0bf-2f99-4cae-8506-6a203f2a5888
+43904,100419743,D4Z4 Binding Element Transcript (Dbet) (DBET),DBET,c4bc0795-a83d-4ad9-b082-79fee542e69f
+18318,171023,Asxl Transcriptional Regulator 1 (Asxl1) (ASXL1),ASXL1,da140f3e-8e6e-4490-b405-4ae2159a73a9
+13045,90987,Zinc Finger Protein 251 (Znf251) (ZNF251),ZNF251,0ab0235a-e1db-4216-91e2-6ef964a4f8ab
+25941,54790,Tet Methylcytosine Dioxygenase 2 (Tet2) (TET2),TET2,2de432be-a7fc-4601-ac2e-73050f523d6f
+2978,1788,Dna Methyltransferase 3 Alpha (Dnmt3A) (DNMT3A),DNMT3A,7fb97ea0-68f6-4feb-881e-48e355257be8
+2896,1737,Dihydrolipoamide S-Acetyltransferase (Dlat) (DLAT),DLAT,ccaf59b0-98f0-41ec-a1c3-77364ec61ba2
+18047,83401,Elovl Fatty Acid Elongase 3 (Elovl3) (ELOVL3),ELOVL3,a19c6fbb-b3e0-4499-893a-b4904f50491f
+11998,7157,Tumor Protein (P53) (P53),P53,f8f8ac29-49ec-4266-bb15-8c952a3cc3fd
+25035,55432,Yod1 Deubiquitinase (Yod1) (YOD1),YOD1,532978c2-e398-46e1-9c16-493c4fd286b2
+8806,5160,Pyruvate Dehydrogenase E1 Subunit Alpha 1 (Pdha1) (PDHA1),PDHA1,9251631f-8ac0-4d4b-97ea-732ba2ef4804
+8808,5162,Pyruvate Dehydrogenase E1 Subunit Beta (Pdhb) (PDHB),PDHB,2baf63ec-9638-4b1b-b7dc-308c22e4b1ca
+1775,8851,Cyclin-Dependent Kinase 5 Regulatory Subunit 1 (Cdk5R1) (CDK5R1),CDK5R1,fb5828bd-fac8-4cee-939a-bac6c977e7da
+1780,1025,Cyclin-Dependent Kinase 9 (Cdk9) (CDK9),CDK9,62ebd616-25e9-4e3b-80ab-3b030240f678
+5362,3399,Inhibitor Of Dna Binding 3 (Id3) (ID3),ID3,832a8717-a584-4a70-a4fa-6a084e666a52
+1787,1029,Cyclin Dependent Kinase Inhibitor 2A (CDKN2A),CDKN2A,80695c8f-d8a9-4e4e-b1a4-5467e185c450
+6407,3845,"Kras Proto-Oncogene, Gtpase (KRAS)",KRAS,0e34b6e2-c673-4b4b-b456-e9f7eca35b38
+583,324,Apc Regulator Of Wnt Signaling Pathway (APC),APC,1943b69c-7632-41c1-b78d-93cc36b71164
+1097,673,"B-Raf Proto-Oncogene, Serine/Threonine Kinase (BRAF)",BRAF,430e6d9c-c794-4ef5-89a8-f3a142fa09da
+8975,5290,"Phosphatidylinositol-4,5-Bisphosphate 3-Kinase Catalytic Subunit Alpha (PIK3CA)",PIK3CA,5f458a43-559e-4763-9f47-400ea5dda5e3
+6770,4089,Smad Family Member 4 (SMAD4),SMAD4,f79618aa-eb3c-41bb-8f7f-599c25be980a
+1788,1030,Cyclin Dependent Kinase Inhibitor 2B (CDKN2B),CDKN2B,d20b07a8-0718-4e65-9740-7beee47f12a1
+1101,675,Brca2 Dna Repair Associated (BRCA2),BRCA2,6e708289-c806-4ace-9747-2f6484f10e18
+7989,4893,"Nras Proto-Oncogene, Gtpase (NRAS)",NRAS,99a03c9a-2f9b-48cf-a09d-bc714a3285d5
+12363,7249,Tsc Complex Subunit 2 (TSC2),TSC2,e34014df-5981-48a8-a4f9-214910ce2837
+173,92,Activin A Receptor Type 2A (ACVR2A),ACVR2A,c8d1c5f0-a5fb-4553-b8d0-1f0ffee6a144
+914,567,Beta-2-Microglobulin (B2M),B2M,8a104904-403e-4603-a990-a558e12ece43
+2514,1499,Catenin Beta 1 (CTNNB1),CTNNB1,a9984cd6-9a93-451b-bb35-a0f0b8ba1b35
+11773,7048,Transforming Growth Factor Beta Receptor 2 (TGFBR2),TGFBR2,89aca747-2013-49ec-a626-3051594e41a2
+2621,1557,Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19),CYP2C19,f076f836-7413-4c4a-a8c6-8bcc5d176a0e
+7029,4233,"Met Proto-Oncogene, Receptor Tyrosine Kinase (MET)",MET,01e3ebfb-7a8f-4bdd-be6f-1b93820bbdb9
+7135,4299,Alf Transcription Elongation Factor 1 (AFF1),AFF1,1b882635-9f0f-4b77-b434-fa06e8ce6d61
+3765,2322,Fms Related Receptor Tyrosine Kinase 3 (FLT3),FLT3,4825a276-3292-423d-8a15-5f0153fe4118
+4172,2625,Gata Binding Protein 3 (GATA3),GATA3,49e2ef81-a7d7-421e-a06b-0bdf5b7e77ea
