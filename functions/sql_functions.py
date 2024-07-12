@@ -3,6 +3,7 @@
 # Import required libraries
 import requests
 import panel as pn
+import pandas as pd
 
 # Import and establish database connection
 import duckdb
@@ -13,13 +14,10 @@ con = duckdb.connect("./browser_cleaner.db")
 def execute_update_commands(event, commands):
     if not event:
         return
-    else:
-        pn.pane.Alert('## Save successful').servable()
-    #for command in commands:
-        #print(command)
+    for command in commands:
+        print(command)
         #con.execute(command)
 
-#---------------------------------------------------------------
 def get_update_commands(value_list, original_values, values_type, values_table, values_column, values_uuid, 
                         links_to, sample = "", folder = ""):
     commands = [] 
@@ -40,6 +38,7 @@ def get_update_commands(value_list, original_values, values_type, values_table, 
             update_command = "".join(update_command)
             commands.append(update_command)
     
+    # TODO check if delete here works?
     elif values_type == "column_link":
         if value_list:
             if len(value_list)>0:
@@ -48,7 +47,8 @@ def get_update_commands(value_list, original_values, values_type, values_table, 
                 update_command = "".join(update_command)
                 commands.append(update_command)
             
-    elif values_type == "table_link":
+    # TODO change in tab_layout to simple_table_link
+    elif values_type == "simple_table_link":
         
         add_ids = set(value_list).difference(set(original_values))
         delete_ids = set(original_values).difference(set(value_list))
@@ -70,6 +70,17 @@ def get_update_commands(value_list, original_values, values_type, values_table, 
             delete_command = "".join(delete_command)
             commands.append(delete_command)
         
+    elif values_type == "complex_table_link":
+
+        delete_command = ["DELETE FROM ",  values_table , " where "] # Delete fully and reinsert
+        delete_command.extend(end_filter[1:])
+        delete_command = "".join(delete_command)
+        commands.append(delete_command)
+
+        for _, row in value_list.iterrows():       
+            insert_command = 'INSERT INTO '+ values_table +' ('+ str(', '.join(value_list.columns))+ ') VALUES '+ str(tuple(row.values))        
+            commands.append(insert_command)
+
     return commands
 
 #---------------------------------------------------------RETRIEVE FROM DATABASE---------------------------------------------------------
@@ -80,7 +91,6 @@ def get_options(table_name, field_name, field_uuid, filter=""):
     dict_result = {v:k for k,v in sorted(dict_result.items(), key=lambda item: str(item[1]))}
     return dict_result
 
-#---------------------------------------------------------------
 def get_values(options, values_type, values_table, values_column, values_uuid, links_to, sample = "", folder = ""):
 
     #-------------Text column---------------
@@ -127,91 +137,45 @@ def get_values(options, values_type, values_table, values_column, values_uuid, l
 
         return values #list of string UUIDs
 
+    elif values_type == "complex_table_link":
+
+        columns = ",".join(values_column)
+        sql_command = ["SELECT distinct ", columns, 
+                        " FROM ", table]
+        
+        if links_to == "folder_uuid":
+            #sql_command.extend([" where ", links_to, " = '", str(folder), "' limit 1"]) # TODO why limit 1?
+            sql_command.extend([" where ", links_to, " = '", str(folder)])
+
+        elif links_to == "sample_uuid":
+            #sql_command.extend([" where ", links_to, " = '", str(sample), "' limit 1"])
+            sql_command.extend([" where ", links_to, " = '", str(sample)])
+
+        sql_command = "".join(sql_command)
+        sql_result = con.sql(sql_command).df()
+
+        return sql_result
 
     #-------------Table link (multichoice many)---------------
     # elife values_type == "view_link"
 
-def get_table_values(table, columns, links_to, folder="", sample=""):
+#def get_table_values(table, columns, links_to, folder="", sample=""):
 
-    columns = ",".join(columns)
-    sql_command = ["SELECT distinct ", columns, 
-                    " FROM ", table]
+#    columns = ",".join(columns)
+#    sql_command = ["SELECT distinct ", columns, 
+#                    " FROM ", table]
     
-    if links_to == "folder_uuid":
-        sql_command.extend([" where ", links_to, " = '", str(folder), "' limit 1"])
+#    if links_to == "folder_uuid":
+#        #sql_command.extend([" where ", links_to, " = '", str(folder), "' limit 1"]) # TODO why limit 1?
+#        sql_command.extend([" where ", links_to, " = '", str(folder)])
 
-    elif links_to == "sample_uuid":
-        sql_command.extend([" where ", links_to, " = '", str(sample), "' limit 1"])
+#    elif links_to == "sample_uuid":
+#        #sql_command.extend([" where ", links_to, " = '", str(sample), "' limit 1"])
+#        sql_command.extend([" where ", links_to, " = '", str(sample)])
 
-    sql_command = "".join(sql_command)
-    #print(sql_command)
-    sql_result = con.sql(sql_command).df()
-    return sql_result
-
-
-
-
+#    sql_command = "".join(sql_command)
+##    #print(sql_command)
+#    sql_result = con.sql(sql_command).df()
+#    return sql_result
 
 
-
-
-
-
-
-
-
-#def get_text_update_commands(text_value, field_name, folder_mc1, by_sample=False):
-#    
-#    for val in folder_mc1:
-#        if by_sample == False:
-#            sql_command = "UPDATE folder SET " + \
-#                            field_name + " = '" + str(text_value) + \
-#                            "' where folder_uuid = '" + str(val) + "'"
-#            return [sql_command]
-
-
-#def get_user_folders(user_uuid):
-#    folder_commands = ["SELECT f.foldername, f.folder_uuid",
-#                        " FROM user_researcher ur",
-#                        " join researcher_folder rf on ur.researcher_uuid = rf.researcher_uuid  ",
-#                        " join folder f on f.folder_uuid = rf.folder_uuid ",
-#                        " WHERE ur.user_uuid = '", user_uuid,
-#                        "' and f.is_root = 1"]
-#    folder_command = "".join(folder_commands)
-#    folder_options = con.sql(folder_command).df().drop_duplicates()
-#    folder_options = {str(result[f"foldername"]):result["folder_uuid"] for _,result in folder_options.iterrows()}
-#    return folder_options
-
-
-# OLD
-#def get_values_old(table_view, table_name, field_name, field_uuid, 
-#                     folder_mc1, 
-#                     value_uuid="field_uuid"):
-#    sql_command = "SELECT distinct " + field_name + "," + field_uuid + " FROM " + table_name
-#    sql_result = con.sql(sql_command).df()#
-
-#    for val in folder_mc1:
-#        sql_command2 = "SELECT distinct " + field_uuid  + ",folder_uuid " + " FROM " + table_view 
-#        sql_result2 = con.sql(sql_command2).df().drop_duplicates()
-#        sql_result2 = sql_result2.loc[sql_result2["folder_uuid"] == str(val)]
-#        filtered_result = sql_result.merge(sql_result2, on=field_uuid)
-#        if value_uuid == "field_uuid":
-#            result = [result[field_uuid] for _,result in filtered_result.iterrows()]
-#        else:
-#            result = [str(result[value_uuid]) for _,result in filtered_result.iterrows()]
-#        return result
-
-
-#def get_text_values_old(field_name, folder_mc1, by_sample=False):
-#    
-#    for val in folder_mc1:
-#        if by_sample == False:
-#            sql_command = ["SELECT distinct ", field_name, 
-#                           ", folder_uuid FROM folder where folder_uuid = '",
-#                           str(val), "' limit 1"]
-#            sql_command = "".join(sql_command)
-#            sql_result = con.sql(sql_command).df()
-#            value = sql_result[field_name][0]
-#            if value == "None":
-#                value = ""
-#            return value
