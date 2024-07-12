@@ -103,7 +103,7 @@ def update_tabs_with_folder(folder_mc):
 
         for folder in folder_mc:
 
-            tab_layout = pd.read_csv("./tab_layout_v3.csv")
+            tab_layout = pd.read_csv("./tab_layout.csv")
             widget_kwargs = {"save_button":save_button, "folder":folder, "tab_layout":tab_layout}
     
             # %%-----------------------------------Overview tab---------------------------------------
