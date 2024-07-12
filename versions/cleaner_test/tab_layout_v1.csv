@@ -1,0 +1,72 @@
+﻿by,function,tab_name,column_name,column_title,column_options,options_type,update_table,column_or_link,widget_type,height,table_view_editable,table_view,table_name,table_title,table_uuid,for_geo,geo_tab,geo_file_section,Allow multiple?,geo_required?,geo_file_title,geo_description
+FOLDER,get_nonsearchable_folder_tab,Overview,title,Title,NA,NA,folder,column,TextAreaInput,30,,,folder,Folder,folder_uuid,TRUE,Metadata,STUDY,FALSE,TRUE,title,Unique title (fewer than 255 characters) that describes the overall study.  A working title from the associated manuscript may be suitable.
+FOLDER,get_nonsearchable_folder_tab,Overview,summary,Summary (Abstract),NA,NA,folder,column,TextAreaInput,200,,,folder,Folder,folder_uuid,TRUE,Metadata,STUDY,FALSE,TRUE,summary (abstract),Thorough description of the goals and objectives of this study.  A working abstract from the associated manuscript may be suitable.  Include as much text as necessary.
+FOLDER,get_nonsearchable_folder_tab,Overview,experimental_design,Experimental Design,NA,NA,folder,column,TextAreaInput,100,,,folder,Folder,folder_uuid,TRUE,Metadata,STUDY,FALSE,TRUE,experimental design,"Describe the type of SAMPLES included in the submission, as well as the experimental conditions and variables under investigation.
+
+Include what types of Samples are analyzed, if replicates are included, are there control and/or reference Samples, etc.
+
+Do not include protocols/methods.
+
+Still not sure what to include?  
+Refer to the ""experimental design"" in the EXAMPLE sheets."
+FOLDER,get_nonsearchable_folder_tab,Collaborators,researcher_name,Contributer,researcher,table,,link,MultiChoice (many),,researcher_folder,researcher_folder,researcher,Collaborator,researcher_uuid,TRUE,Metadata,STUDY,TRUE,FALSE,contributor,"Format:  Firstname, Initial, Lastname
+
+Example:  Jane, Doe
+Example:  Yixin, Wang
+Example:  John, H, Smith
+Example:  Charles,E,Determan Jr
+Example:  Monique,G,van der Wijst
+Example:  Mark, Anderson Dumont
+
+Each contributor on a separate line.
+Add as many contributor lines as needed."
+FOLDER,get_nonsearchable_folder_tab,Collaborators,lab_name,Lab,lab,multichoice_options,,,MultiChoice (many),,lab_folder,v_folder_lab,lab,Lab,lab_uuid,FALSE,,,,,,
+FOLDER,get_nonsearchable_folder_tab,Collaborators,institute_name,Institute,institute,multichoice_options,,,MultiChoice (many),,institute_folder,v_folder_institute,institute,Institue,institute_uuid,FALSE,,,,,,
+FOLDER,get_nonsearchable_folder_tab,Collaborators,study_name,Study,study,multichoice_options,,,MultiChoice (many),,study_folder,study_folder,study,Study,study_uuid,FALSE,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,breed,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,disease state,,,,,,
+,,,,,,,,,,,,,,,,tumor stage,,,,,,
+,,,,,,,,,,,,,,,,ChIP antibody,,,,,,

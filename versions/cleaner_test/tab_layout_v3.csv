@@ -1,0 +1,182 @@
+﻿widget_name,widget_type,required,height,options_type,options_table,options_column,options_uuid,parameters_filter,misc_filter,values_type,values_table,values_column,values_uuid,links_to,geo_section,geo_required,geo_title,description
+Title,TextAreaInput,1,30,free_text,,,,,,free_text,folder,title,,folder_uuid,STUDY,1,title,Unique title (fewer than 255 characters) that describes the overall study.  A working title from the associated manuscript may be suitable.
+Summary (Abstract),TextAreaInput,1,200,free_text,,,,,,free_text,folder,summary,,folder_uuid,STUDY,1,summary (abstract),Thorough description of the goals and objectives of this study.  A working abstract from the associated manuscript may be suitable.  Include as much text as necessary.
+Experimental Design,TextAreaInput,1,100,free_text,,,,,,free_text,folder,experimental_design,,folder_uuid,STUDY,1,experimental design,"Describe the type of SAMPLES included in the submission, as well as the experimental conditions and variables under investigation.
+
+Include what types of Samples are analyzed, if replicates are included, are there control and/or reference Samples, etc.
+
+Do not include protocols/methods.
+
+Still not sure what to include?  
+Refer to the ""experimental design"" in the EXAMPLE sheets."
+Collaborator,MultiChoice (many),1,,table,researcher,researcher_name,researcher_uuid,,,table_link,researcher_folder,researcher_name,researcher_uuid,folder_uuid,STUDY,0,contributor,"Format:  Firstname, Initial, Lastname
+
+Example:  Jane, Doe
+Example:  Yixin, Wang
+Example:  John, H, Smith
+Example:  Charles,E,Determan Jr
+Example:  Monique,G,van der Wijst
+Example:  Mark, Anderson Dumont
+
+Each contributor on a separate line.
+Add as many contributor lines as needed."
+Lab,MultiChoice (many),1,,table,parameter,parameter_name,parameter_uuid,lab,,table_link,parameter_folder,parameter_name,parameter_uuid,folder_uuid,,,,
+Collaborating Institute,MultiChoice (many),0,,table,parameter,parameter_name,parameter_uuid,institute,and parameter.parameter_name != 'Coriell Institute for Medical Research',table_link,parameter_folder,parameter_name,parameter_uuid,folder_uuid,,,,
+Study,MultiChoice (many),0,,table,parameter,parameter_name,parameter_uuid,study,,table_link,parameter_folder,parameter_name,parameter_uuid,folder_uuid,,,,
+Growth Protocol,TextAreaInput,0,100,free_text,,,,,,free_text,folder,growth_protocol,,folder_uuid,PROTOCOLS,0,growth protocol,[Optional]  Describe the conditions used to grow or maintain organisms or cells prior to extract preparation.
+Treatment Protocol,TextAreaInput,0,100,free_text,,,,,,free_text,folder,treatment_protocol,,folder_uuid,PROTOCOLS,0,treatment protocol,[Optional] Describe the treatments applied to the biological material prior to extract preparation.
+Extract Protocol,TextAreaInput,0,100,free_text,,,,,,free_text,folder,extract_protocol,,folder_uuid,PROTOCOLS,1,extract protocol,Describe the protocols used to extract and prepare the material to be sequenced. 
+Library Construction Protocol,TextAreaInput,0,100,free_text,,,,,,free_text,folder,library_construction_protocol,,folder_uuid,PROTOCOLS,1,library construction protocol,Describe the library construction protocol.
+Library Strategy,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,library_strategy,,column_link,folder,library_strategy,,folder_uuid,PROTOCOLS,1,library strategy,"""A Sequence Read Archive-specific field that describes the sequencing technique for each library. 
+
+Please enter one of the following terms:
+
+RNA-Seq
+scRNA-seq
+miRNA-Seq
+ncRNA-Seq
+ChIP-Seq
+ATAC-seq
+Bisulfite-Seq
+Bisulfite-Seq (reduced representation)
+Spatial Transcriptomics
+CITE-seq
+CUT&Run
+CUT&Tag
+MNase-Seq
+Hi-C
+MBD-Seq
+MRE-Seq
+MeDIP-Seq
+DNase-Hypersensitivity
+Tn-Seq
+FAIRE-seq
+SELEX
+RIP-Seq
+ChIA-PET
+
+BRU-Seq
+CRISPR Screen
+Capture-C
+ChEC-seq
+ChIRP-seq
+DamID-Seq
+EM-seq
+GRO-Seq
+HiChIP
+MeRIP-Seq
+PRO-Seq
+RNA methylation
+Ribo-Seq
+TCR-Seq
+BCR-Seq
+iCLIP
+smallRNA-Seq
+snRNA-Seq
+ssRNA-Seq
+RNA-Seq (CAGE)
+RNA-Seq (RACE)
+16S rRNA-seq
+4C-Seq
+
+OTHER: specify"""
+Data Processing Step,TextAreaInput,0,100,free_text,,,,,,free_text,folder,data_processing_step,,folder_uuid,PROTOCOLS,1,data processing step,"Provide details of how processed data files were generated. 
+
+Steps may include:
+Base-calling software, version, parameters;
+Data filtering steps;
+Read alignment software, version, parameters;
+Additional processing software (e.g., peak-calling, abundance measurement), version, parameters;
+etc.
+"
+Genome Build / Assembly,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,genome_build,,column_link,folder,genome_build,,folder_uuid,PROTOCOLS,1,genome build/assembly,"UCSC or NCBI genome build number (e.g., hg18, mm9, human NCBI genome build 36, etc...), or reference sequence used for read alignment. "
+Processed Data Files Format and Content,TextAreaInput,0,100,free_text,,,,,,free_text,folder,processed_files_format,,folder_uuid,PROTOCOLS,1,processed data files format and content,"For each processed data file type, provide a description of the format and content."
+Organism,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,organism,,column_link,sample,organism,parameter_uuid,sample_uuid,SAMPLES,1,organism,"Identify the organism(s) from which the sequences were derived.  
+
+You can search for your organism(s) at our Taxonomy Database:   https://www.ncbi.nlm.nih.gov/taxonomy/"
+Molecule,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,molecule,,column_link,folder,molecule,parameter_uuid,folder_uuid,SAMPLES,1,molecule,"Type of molecule that was extracted from the biological material.       
+    
+Include one of the following: 
+total RNA
+polyA RNA
+cytoplasmic RNA
+nuclear RNA
+genomic DNA
+protein
+other"
+Single or Paired End,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,single_paired,,column_link,folder,singlepaired,parameter_uuid,folder_uuid,SAMPLES,1,single or paired-end,"Include ""single"" (usual case) or ""paired-end""."
+Instrument Model,MultiChoice (one),0,,table,parameter,parameter_name,parameter_uuid,instrument_model,,column_link,folder,instrument_model,parameter_uuid,folder_uuid,SAMPLES,1,instrument model,"Include one of the following models:
+
+Illumina HiSeq 1000
+Illumina HiSeq 1500
+Illumina HiSeq 2000
+Illumina HiSeq 2500
+Illumina HiSeq 3000
+Illumina HiSeq 4000
+HiSeq X Five
+HiSeq X Ten
+Illumina HiScanSQ
+Illumina iSeq 100
+Illumina MiSeq
+Illumina MiniSeq
+Illumina NextSeq 500
+NextSeq 550
+NextSeq 1000
+NextSeq 2000
+Illumina NovaSeq 6000
+Illumina NovaSeq X
+Illumina NovaSeq X Plus
+
+AB 5500 Genetic Analyzer
+AB 5500xl Genetic Analyzer
+AB 5500xl-W Genetic Analysis System
+
+BGISEQ-500
+DNBSEQ-G400
+DNBSEQ-G400 FAST
+DNBSEQ-G50
+DNBSEQ-T7
+MGISEQ-2000RS
+
+GridION
+MinION
+PromethION
+Ion GeneStudio S5
+Ion GeneStudio S5 plus
+Ion GeneStudio S5 prime
+Ion Torrent Genexus
+Ion Torrent PGM
+Ion Torrent Proton
+Ion Torrent S5
+Ion Torrent S5 XL
+
+PacBio RS
+PacBio RS II
+Sequel
+Sequel II
+Sequel IIe
+
+Complete Genomics
+Element AVITI
+FASTASeq 300
+GenoCare 1600
+GenoLab M
+GS111
+Helicos HeliScope
+Onso
+Revio
+Sentosa SQ301
+Tapestri
+UG 100
+"
+Sex,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,sex,,column_link,sample,sex,parameter_uuid,sample_uuid,SAMPLES,0,sex,
+Biomaterial,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,biomaterial,,column_link,sample,biomaterial,parameter_uuid,sample_uuid,,,,
+Knockout,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,knockout,,column_link,sample,knockout,parameter_uuid,sample_uuid,,,,
+Cell Line Type,MultiChoice (one),1,,table,parameter,parameter_name,parameter_uuid,cellline_category,,column_link,sample,cellline_category,parameter_uuid,sample_uuid,,,,
+Treatment Samples,MultiChoice (many),1,,table,sample,title,sample_uuid,,,table_link,treatmentgroup_sample,treatmentgroup_name,treatmentgroup_uuid,sample_uuid,,,,
+Biomaterial Samples,MultiChoice (many),1,,table,sample,title,sample_uuid,,,table_link,biomaterialgroup_sample,biomaterialgroup_name,biomaterialgroup_uuid,sample_uuid,,,,
+Gene,MultiChoice (many),1,,table,gene,gene_name,gene_uuid,,,table_link,gene_folder,gene_name,gene_uuid,folder_uuid,,,,
+Disease,MultiChoice (many),1,,table,disease,disease_name,disease_uuid,,,table_link,disease_folder,disease_name,disease_uuid,folder_uuid,,,,
+Cell Line,MultiChoice (many),1,,table,cell_line,cell_line_name,cell_line_uuid,,,table_link,cell_line_folder,cell_line_name,cell_line_uuid,folder_uuid,,,,
+Disease Samples,MultiChoice (many),1,,table,sample,title,sample_uuid,,,table_link,disease_sample,disease_name,disease_uuid,sample_uuid,,,,
+Gene Samples,MultiChoice (many),1,,table,sample,title,sample_uuid,,,table_link,gene_sample,gene_name,gene_uuid,sample_uuid,,,,
