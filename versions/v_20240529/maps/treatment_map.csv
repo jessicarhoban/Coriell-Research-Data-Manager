@@ -1,0 +1,13 @@
+search_term,treatment_name,treatment_id_pubchem,treatment_uuid,treatment_symbol
+dmso,Control: Dimethyl Sulfoxide (DMSO),679,bf2f92c4-2013-481f-b76f-a7366939b664,DMSO
+dac,Decitabine (DAC),451668,0c5deebf-8a32-4cc1-8ae3-ba5b6954c9cf,DAC
+thz1,(THZ1),73602827,68a3332a-ec4e-4c5f-865f-b4ed4b09c5b4,THZ1
+bsj ,(BSJ),,06eb45cf-1372-424e-bbc6-cf9eec692b6b,BSJ
+bsj4,(BSJ4),,8cd54713-ddcb-4d2f-89be-51e05cabf99d,BSJ4
+protac,Proteolysis Targeting Chimera (PROTAC),,01c06a8b-996d-46ce-b8de-58509ba71136,PROTAC
+olaparib,Olaparib,23725625,d5d80940-a211-4233-9d00-81d98e3079bb,
+gilterinib,Gilterinib,49803313,5a1da1f4-1598-4bc0-bfc3-17b66191a53a,
+5aza,5-Azacytidine (5-aza),9444,d9c94795-70d3-4815-9f58-cfbbfd13b084,5-aza
+azd,AZD-7648 DNA-PK inhibitor (AZD),,ddc6ee37-edeb-4ba5-80d9-3a2948967296,AZD
+bdnf,Brain-Derived Neurotrophic Factor (BDNF),,71efb593-e707-4bae-a546-427b9d4d2dca,BDNF
+c10orf125,C10orf125 Polyclonal Antibody,,a409630a-f09a-4ee6-8877-24ba552c1be8,

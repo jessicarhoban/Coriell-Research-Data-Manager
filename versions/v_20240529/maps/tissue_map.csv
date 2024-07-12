@@ -1,0 +1,15 @@
+search_term,tissue_name,tissue_id_bto,tissue_id_uberon,tissue_uuid
+cord blood,Cord Blood,BTO_0004053,UBERON_0012168,3cda6369-9d25-4ea3-9d23-1d99b852662c
+blood,Blood,BTO_0000089,UBERON_0000178,841cf322-b49c-435a-84a3-4cbe114bfded
+skeletal muscle,Skeletal Muscle,BTO_0001103,UBERON_0001134,dcb2f51a-83ba-4d44-8e44-6683c718c39e
+heart,Heart,BTO_0000562,UBERON_0000948,45a596cb-d32d-452e-b0b9-31862e928292
+kidney,Kidney,BTO_0000671,UBERON_0002113,cf7c6d00-9b8d-4134-96e5-117c16ee8422
+saliva,Saliva,BTO_0001202,UBERON_0001836,b942e990-155f-4b5c-9ae3-80173fa1cde3
+spleen,Spleen,BTO_0001281,UBERON_0002106,141a6ef8-42d5-4b0e-82f1-385a5db54a6b
+"colon,crc",Colon,TO_0000269,UBERON_0001155,7600132b-8b0f-4a50-9c6e-95877f7cc2ab
+organoid,Organoid,,,b693d980-ee4f-451c-b1c2-dc075f8ca39c
+brainoids,Brain Organoid,,,d18bca7b-d498-4b08-b748-3e27bf3e4ddb
+brain,Brain,BTO_0000142,UBERON_0000955,ae6df4f3-e773-4204-9265-48ba9bc40c8c
+esophagus,Esophagus,BTO_0000959,UBERON_0001043,2c15ea09-8559-4228-ade2-ec9cd8349142
+intestine,Intestine,BTO_0000648,UBERON_0000160,b2735f64-3f66-434f-9962-55d1dd2e9a57
+aorta,Aorta,BTO_0000135,UBERON_0000947,2a81b63d-b37d-49cc-a3fa-9151f7cfd668

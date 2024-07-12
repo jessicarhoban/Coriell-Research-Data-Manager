@@ -1,0 +1,18 @@
+search_term,experiment_name,experiment_symbol,subtype,experiment_uuid
+"RNA-seq,rnaseq",RNA-Seq,RNA-Seq,,bcda6a6b-632d-4bef-ae0a-2f3a75c7d662
+"eukmrnaseq,mrna",RNA-Seq,RNA-Seq,mRNA,87be8f82-bd02-4aa2-850c-68a8066fbf77
+grna,RNA-Seq,RNA-Seq,gRNA,064b553b-4b29-42f6-819a-7bf1fa9bc931
+"lncrnaseq,lncrna",RNA-Seq,RNA-Seq,Long Noncoding RNA (LncRNA),5a6454b2-6950-47e9-a294-d6cb6b610432
+"low pass WGS,hwgs,wgs",Whole Genome Sequencing (WGS),WGS,Low Pass,e17e742b-8aea-44e7-87e3-4fb0133a4322
+crispr,CRISPR,CRISPR,,afc9214e-79ae-4a13-850e-fe82708ec451
+"scrnaseq,scrna,scrnaseq,sc_rnaseq,scrna-seq,",RNA-Seq,RNA-Seq,Single Cell RNA-Seq (scRNA-seq),c402f2f8-df0a-471a-b816-2abd6de07f9e
+"snatacseq,sn_atacseq",ATAC-Seq,ATAC-Seq,Single Nucleus ATAC-Seq (snATAC-seq),2e9991aa-308d-48c8-9c47-008eed87d640
+"sn_rnaseq,snrnaseq",RNA-Seq,RNA-Seq,Single Nucleus RNA-Seq (snRNA-seq),4ac269ed-2430-4fa1-ab27-428cdf82d493
+"sc_atacseq,sc_atac,sc_atac-seq,scatac-seq",ATAC-Seq,ATAC-Seq,Single Cell ATAC-Seq (scATAC-seq),2b4fa3d3-6dec-4bb4-bcb4-8a5d222a38d5
+rrbs,Reduced-Representation Bisulfite Sequencing (RRBS-seq),RRBS-Seq,,c2fbf53b-a8c8-4e0f-b9fa-f9275c6ce601
+dream,DREAM,Dream,,d6814d81-0dff-4e0d-91da-216bba12fb5e
+16s,16S rRNA,16S rRNA,,96b774fc-fd80-4c3e-95e5-608033747d5f
+"cutrun,cut_run,cut&run",CUT&RUN,CUT&RUN,,e73699c3-c475-4f85-a416-de226009e45b
+chip,Chromatin Immunoprecipitation Sequencing (ChIP-Seq),ChIP-Seq,,a6510a57-e69d-4e28-a458-51bb8eb77886
+"atacseq,atac-seq,atac_seq",ATAC-Seq,ATAC-Seq,,9c5853c6-cece-43dd-8915-14e92b76f2fa
+"bisulfite_amplicon,bisulfite amplicon,bisamp,bis_amplicon,ampliseq",Bisulfite Amplicon Sequencing (BSAS),BSAS,,22273a01-d994-4a50-8883-5fccc27a4d2c

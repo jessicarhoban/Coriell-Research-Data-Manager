@@ -1,0 +1,23 @@
+search_term,gene_id_hgnc,gene_id_ncbi,gene_name,organism_name,organism_id_ncbi,gene_symbol,gene_uuid
+arsa,713,410,Arylsulfatase A (ARSA),Human,9606,ARSA,25bd1ac2-e4bf-4c27-a0ed-743eb87d71c3
+spry3,11271,10251,Sprouty RTK Signaling Antagonist 3 (SPRY3),Human,9606,SPRY3,6c62f958-6274-4de8-ab59-a311a0eedbe4
+spry4,15533,81848,Sprouty RTK Signaling Antagonist 4 (SPRY4),Human,9606,SPRY4,0406c0bf-2f99-4cae-8506-6a203f2a5888
+dbet,43904,100419743,D4Z4 Binding Element Transcript (DBET),Human,9606,DBET,c4bc0795-a83d-4ad9-b082-79fee542e69f
+asxl1,18318,171023,ASXL Transcriptional Regulator 1 (ASXL1),Human,9606,ASXL1,da140f3e-8e6e-4490-b405-4ae2159a73a9
+znf251,13045,90987,Zinc Finger Protein 251 (ZNF251),Human,9606,ZNF251,0ab0235a-e1db-4216-91e2-6ef964a4f8ab
+tet2,25941,54790,Tet Methylcytosine Dioxygenase 2 (TET2),Human,9606,TET2,2de432be-a7fc-4601-ac2e-73050f523d6f
+dnmt3a,2978,1788,DNA Methyltransferase 3 Alpha (DNMT3A),Human,9606,DNMT3A,7fb97ea0-68f6-4feb-881e-48e355257be8
+dlat,2896,1737,Dihydrolipoamide S-acetyltransferase (DLAT),Human,9606,DLAT,ccaf59b0-98f0-41ec-a1c3-77364ec61ba2
+elov13,18047,83401,ELOVL Fatty Acid Elongase 3 (ELOVL3),Human,9606,ELOVL3,a19c6fbb-b3e0-4499-893a-b4904f50491f
+p53,11998,7157,Tumor Protein (P53),Human,9606,P53,f8f8ac29-49ec-4266-bb15-8c952a3cc3fd
+yod1,25035,55432,YOD1 Deubiquitinase (YOD1),Human,9606,YOD1,532978c2-e398-46e1-9c16-493c4fd286b2
+pdha1,8806,5160,Pyruvate Dehydrogenase E1 Subunit Alpha 1 (PDHA1),Human,9606,PDHA1,9251631f-8ac0-4d4b-97ea-732ba2ef4804
+pdhb,8808,5162,Pyruvate Dehydrogenase E1 Subunit Beta (PDHB),Human,9606,PDHB,2baf63ec-9638-4b1b-b7dc-308c22e4b1ca
+cdk5r1,1775,8851,Cyclin-Dependent Kinase 5 Regulatory Subunit 1 (CDK5R1),Human,9606,CDK5R1,fb5828bd-fac8-4cee-939a-bac6c977e7da
+cdk9,1780,1025,Cyclin-Dependent Kinase 9 (CDK9),Human,9606,CDK9,62ebd616-25e9-4e3b-80ab-3b030240f678
+id3,5362,3399,Inhibitor Of DNA Binding 3 (ID3),Mouse,1758,ID3,832a8717-a584-4a70-a4fa-6a084e666a52
+k9me3,,,Histone 3 (K9me3) Bivalent Methylation Factor,,,K9me3,25fa63be-0153-4736-8369-c8414ccb0cf4
+ebna,,,EBV Nuclear Antigen (EBNA),,,EBNA,7bde49a6-745c-47e8-8ef5-cf7d7ae06326
+mmp,,,Matrix metalloproteinases (MMPs),Mouse,1758,MMPs,3c49fe90-3e64-4ed2-b8fa-91771f495d0c
+ evi+,,,Ecotropic Viral Integration (EVI),Mouse,1758,EVI,b502edae-e99c-46da-8fdc-0ece5518948a
+ tet+,,,Ten Eleven Translocation (TET),Mouse,1758,TET,78b580ce-0908-499b-a322-cabc8edffe2f
