@@ -29,7 +29,7 @@ pn.extension('mathjax')
 
 # Import and establish database connection
 import duckdb
-con = duckdb.connect("./browser_cleaner.db")
+con = duckdb.connect("./database/browser_cleaner.db")
 
 # Import custom functions
 import functions.sql_functions as sqlfunc
