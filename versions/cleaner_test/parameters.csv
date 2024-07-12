@@ -1,0 +1,208 @@
+parameter_name,parameter_type,parameter_uuid
+Homo sapiens,organism,38580638-8e8d-42d0-9823-4286c246bc0f
+Mus musculus,organism,1647e9c6-2ed8-4af5-b1c8-43f4357a794b
+total RNA,molecule,0b554c84-9147-4f1f-a5bd-85942f6baa7a
+polyA RNA,molecule,1e8aa477-02b6-4d04-8b7f-09b36cd8a99d
+cytoplasmic RNA,molecule,610b2f85-3b78-49f4-9069-41c803f876e3
+nuclear RNA,molecule,fa5a8d64-3b57-4739-a672-f3540f349038
+genomic DNA,molecule,aebee7a9-62be-4e82-abd0-25cfb8ba9ca1
+protein,molecule,fb3ebfb6-813a-41e4-856d-9ce30f267d5a
+other,molecule,393499d4-f622-48ed-8174-ccdcf58953ef
+single,single_paired,fe471f4b-dc67-4bda-bd09-f791ba210715
+paired-end,single_paired,09b1373d-c400-44fa-b95b-4e674184db02
+Illumina HiSeq 1000,instrument_model,6f6ba862-56a0-4f40-be4f-8bf9509aab3d
+Illumina HiSeq 1500,instrument_model,ed145ab3-0206-4304-9826-d62a323e892d
+Illumina HiSeq 2000,instrument_model,5c35b08f-dd80-48ea-ae13-92a25cc99d63
+Illumina HiSeq 2500,instrument_model,e89a834e-2c35-495b-98cb-93ca052e4228
+Illumina HiSeq 3000,instrument_model,4c7a8813-49d9-4515-a0ea-0a34d433146d
+Illumina HiSeq 4000,instrument_model,adc542cc-c3a0-45f7-92d3-21bccf9a3556
+HiSeq X Five,instrument_model,47e4c1ab-52a9-4835-bfdf-a3a95a4e2014
+HiSeq X Ten,instrument_model,55efacd5-71f3-40a4-88ae-b83d14c43d03
+Illumina HiScanSQ,instrument_model,c0c5e4b9-19b7-4725-82ea-b52bb0f40b66
+Illumina iSeq 100,instrument_model,9b4602c6-bc06-4c8f-b936-7dca087d5950
+Illumina MiSeq,instrument_model,930dbb18-05f9-4122-9fd3-a4af1b7e0f34
+Illumina MiniSeq,instrument_model,46eeefd1-4403-457b-bd44-d4e07b078109
+Illumina NextSeq 500,instrument_model,77c9b9be-f638-4558-8b09-a0500d7ae4be
+NextSeq 550,instrument_model,e0ee01dd-3ea8-43bc-b8b4-3e726989b4b6
+NextSeq 1000,instrument_model,d288f284-d00b-40bb-9eba-4d0229d3128c
+NextSeq 2000,instrument_model,46e9ed77-c2d2-45ac-8890-b6b548c95742
+Illumina NovaSeq 6000,instrument_model,bd46eb1f-8595-4557-a73c-1238320bae4b
+Illumina NovaSeq X,instrument_model,b8a217db-cb65-4d3e-8b19-60dbd1bfbf30
+Illumina NovaSeq X Plus,instrument_model,2faaf025-fd44-4d8b-811a-63113b4342cd
+AB 5500 Genetic Analyzer,instrument_model,0887318a-4f16-456b-9386-3798c9df2be2
+AB 5500xl Genetic Analyzer,instrument_model,f864a713-3b8c-4e68-94a7-9388bc98d676
+AB 5500xl-W Genetic Analysis System,instrument_model,432052b6-9c05-4f8b-9b44-282f48f5bbc4
+BGISEQ-500,instrument_model,0d1af343-0ffb-4248-bbb8-62eb07bce6e9
+DNBSEQ-G400,instrument_model,c0509306-7984-4bdd-9159-537c39226c20
+DNBSEQ-G400 FAST,instrument_model,526ec6ba-f97f-49a1-98f4-babad449f996
+DNBSEQ-G50,instrument_model,35f2dedb-eb5f-449c-be96-35ae906047d8
+DNBSEQ-T7,instrument_model,da57879c-9f0d-4d0e-9788-9cef04930ac9
+MGISEQ-2000RS,instrument_model,46417534-e0de-4ec4-972a-15f868fe2f13
+GridION,instrument_model,53c6e96b-45a3-4831-9c0e-3a80ffb50866
+MinION,instrument_model,f4b8fcc9-60e6-47e0-bdf3-6545d45afec4
+PromethION,instrument_model,bec8bb9a-f25e-4363-8ef7-08162edcac1a
+Ion GeneStudio S5,instrument_model,594d8ef2-ec7b-4e8a-9807-df8a469f31da
+Ion GeneStudio S5 plus,instrument_model,1cbe788c-ddb6-4717-a6a2-01d16299b4ef
+Ion GeneStudio S5 prime,instrument_model,799cb41a-35ea-457b-8b40-65ae1b46a2d7
+Ion Torrent Genexus,instrument_model,04f3372e-8e74-4e31-97be-6e21aede607b
+Ion Torrent PGM,instrument_model,b31a1496-c206-4aa7-821a-5d6759cdc633
+Ion Torrent Proton,instrument_model,264c431a-fb79-42b3-93e2-5eb70b33c39c
+Ion Torrent S5,instrument_model,4b06e557-1e6b-40b3-b8fa-ddec256ecb7c
+Ion Torrent S5 XL,instrument_model,461bdd0d-4af9-4976-8d71-314fe4b4e27d
+PacBio RS,instrument_model,e0f95c74-b60e-4f07-9114-296da8e7d786
+PacBio RS II,instrument_model,a620ddb9-8e04-4efe-8280-f060360bb465
+Sequel,instrument_model,6a5394b7-6b09-4c6a-884e-8bf51aa63224
+Sequel II,instrument_model,7f2030e6-705d-400b-bb40-0fd69632de26
+Sequel IIe,instrument_model,e1b16f71-75c2-44f5-97d3-2a8908c2b50f
+Complete Genomics,instrument_model,9fdcb5a3-4cf1-4bd7-a7cd-899243060f20
+Element AVITI,instrument_model,51bbc3eb-512a-4ce3-aa22-93cf9e35e4df
+FASTASeq 300,instrument_model,d7b8efff-5573-4936-a3dd-813aee45e211
+GenoCare 1600,instrument_model,3158a118-10c5-46ef-bb2c-5b3e327444d8
+GenoLab M,instrument_model,8770fbf3-f5f1-4361-8afc-1953ad8dcc1a
+GS111,instrument_model,8b3422f7-3f64-4476-8460-09ee270da3c5
+Helicos HeliScope,instrument_model,422df6fe-9a10-4b90-b5b4-97f6d60886c6
+Onso,instrument_model,2439f49e-d67d-4e12-bd83-3c2f3e543baa
+Revio,instrument_model,84036cb9-48fa-4c9d-bd3d-c02bb01099bb
+Sentosa SQ301,instrument_model,34d6ae3c-1f77-4cd5-98a2-71aac9d67349
+Tapestri,instrument_model,ce8e04bd-b5d1-4ed9-a246-c19e578d43c5
+UG 100,instrument_model,646aa20d-62c9-4b04-835d-f0c38bf21a1a
+Sex unspecified,sex,f7398794-042a-4b6d-a0ee-0d54bc4fb5f6
+Sex ambiguous,sex,5ea74115-6ac3-4d0d-bdf4-39182b4ea425
+Male,sex,30a107d6-05fa-49f7-81af-5efaa82c1d6e
+Mixed sex,sex,19dfc7cb-5a16-4fad-a24e-e9086fcd6b57
+Female,sex,e5a36e02-6ce9-4415-8e5e-27c853fe82a2
+Cell line,biomaterial,bc146756-7c4b-4714-88a6-7cec0f149b7b
+Cell suspension,biomaterial,8a8f6dc3-bf8e-44b2-8a19-6bbdf2b1ce5f
+Organoid,biomaterial,02383dbc-f5cf-4870-8ebf-274e8f3b32bb
+Specimen from organism,biomaterial,9cc4bb5f-c424-417d-b241-da5e808600b6
+KO mouse,knockout,0902888d-a124-4dce-a276-b6e607479e40
+Recombinant Adeno-Associated Virus,knockout,e1b2d567-16a4-4423-821b-a3b9fdb481cf
+Not specified,knockout,c3e03f30-d6cb-47ff-87fb-13e49c213546
+Homologous recombinationEBV-based vector siRNA knockdown,knockout,db82930b-641e-4bc8-afc0-192a91d27c48
+Spontaneous mutation,knockout,4cb70074-7191-4fc4-a439-920c072360ec
+TALEN,knockout,21683fd0-1f79-4690-b2fe-1fb0c6623ca3
+Floxing/Cre recombination,knockout,4b975a39-ff30-4b1b-9386-ca025a437606
+Gene-targeted KO mouse,knockout,46678a47-3876-4ffc-b593-247d9466d67c
+Promoterless gene targeting,knockout,38b81dc3-c4b4-4c20-9853-04ba7ff0fe32
+ZFN,knockout,78a1632b-e76c-4455-8ec8-f97271907168
+CRISPR/Cas9n,knockout,e8827abf-e162-4088-8678-7c6d59534714
+CRISPR/Cas9,knockout,f98e5fff-e6f5-47d3-b644-5e60f4bf6bf4
+Gene trap,knockout,e99b77b1-2e9e-400d-9271-eee9b069b66a
+BAC homologous recombination,knockout,f2a02cd6-6c42-4e5e-814c-cc55fa4dccf6
+Gamma radiation,knockout,c9bcd91e-6109-4c7f-8635-b7a2350b6316
+siRNA knockdown,knockout,311cdb9a-b1fa-4f80-b90c-b8e6484d04e2
+Knockout-first conditional,knockout,aa0143da-e526-4e4d-a553-b3b54ac719e9
+shRNA knockdown,knockout,b0e9f0a8-1db2-4a8a-90af-c4307aa72846
+Cre/loxP,knockout,312ceba9-12d5-47ec-b1fd-cd95515f12d3
+Hybridoma,cellline_category,c0b0c133-3492-429c-8597-82860706b52a
+Conditionally immortalized cell line,cellline_category,8637ccf2-e803-4487-88ac-a7b027aeae11
+Cancer cell line,cellline_category,69cd5b90-eb8c-46cb-82f0-d1d0b2a72080
+Hybrid cell line,cellline_category,335855dc-f5d4-40df-8109-a6b211718982
+Transformed cell line,cellline_category,96f464ae-f8ee-4ddb-97e4-e55194e650ed
+Spontaneously immortalized cell line,cellline_category,8d89b88a-f98e-42c0-8c5f-3adb1fd6cb4e
+Stromal cell line,cellline_category,b15565fa-a261-4e61-8717-2ac18e16108d
+Finite cell line,cellline_category,64226ad6-3419-4c27-87e9-61ad5fe1e6cb
+Embryonic stem cell,cellline_category,45409aa4-9bf1-4d36-8aa3-fe4ce36ecebd
+Induced pluripotent stem cell,cellline_category,246eb811-aa03-457a-ad3e-2a4acc0ec637
+Telomerase immortalized cell line,cellline_category,c0991925-79d4-4583-9731-f55322b44679
+Somatic stem cell,cellline_category,6aed20b4-f1f4-4e87-91f3-5efd65fdd9f3
+Factor-dependent cell line,cellline_category,e8b70235-3627-46c4-8161-029b07bb3d18
+Undefined cell line type,cellline_category,c33b7127-e5b4-4fa5-89bd-a07e35bbd41f
+hs1 (T2T Consortium CHM13v2.0),genome_build,eebba138-efaa-4fba-8f3c-0725f21468c9
+hg38 (Genome Reference Consortium GRCh38),genome_build,b6fd30b8-6d87-47db-b21a-faa4e5b0a71d
+hg19 (Genome Reference Consortium GRCh37),genome_build,bdbad503-54a7-4992-8171-c9e47c9544d0
+hg18 (NCBI Build 36.1),genome_build,4da0076d-af17-4644-bd23-6bc8c4857070
+hg17 (NCBI Build 35),genome_build,2aa23e09-3ed5-477b-a1b9-4cabb0c4ea03
+hg16 (NCBI Build 34),genome_build,6d82e850-f2f4-4e35-a7bc-b23162c2d4ea
+hg15 (NCBI Build 33),genome_build,7a65ed8c-6adb-49d2-9107-b995c5ed9d9f
+hg13 (NCBI Build 31),genome_build,03ad7c0e-3d77-4d1d-9fef-3de2e64c478f
+hg12 (NCBI Build 30),genome_build,7028c185-250d-4769-a992-f6e0411a6e81
+hg11 (NCBI Build 29),genome_build,2f9eaa00-f485-4e5d-8bb5-60fb8b12315c
+hg10 (NCBI Build 28),genome_build,ce17ed2d-b679-4d5b-83c3-c36bcc8315a5
+hg8 (UCSC-assembled)hg7 (UCSC-assembled),genome_build,b62b3bd1-28ab-4add-a24f-64d95fdde6b3
+hg6 (UCSC-assembled),genome_build,52265f15-f7cb-4897-9d64-d35434006854
+hg5 (UCSC-assembled),genome_build,297f249f-dad8-4fc6-b789-099da28a7c12
+hg4 (UCSC-assembled),genome_build,a980303f-1ba5-422c-8950-72bdf79cbf37
+hg3 (UCSC-assembled),genome_build,0a856e29-b57d-44cf-809f-5c46a80d9917
+hg2 (UCSC-assembled),genome_build,b76f7165-3945-46a3-860a-1b120176e818
+hg1 (UCSC-assembled),genome_build,078b823b-9614-4964-bb18-c918370b063a
+mm39 (Genome Reference Consortium Mouse Build 39),genome_build,663214a5-b00a-4691-847f-3016439e4300
+mm10 (Genome Reference Consortium GRCm38),genome_build,0400f689-c7b5-4a4d-9db6-7630ba694538
+mm9 (NCBI Build 37),genome_build,709bce5c-7d8c-477c-8b45-5370b2a91f91
+mm8 (NCBI Build 36),genome_build,342397e8-9c4a-49ee-a9c8-8a8154ec8058
+mm7 (NCBI Build 35),genome_build,98ea3812-5620-417a-b87d-5bc1c8f5201a
+mm6 (NCBI Build 34),genome_build,964bf601-dcb6-43ab-b85a-4392591da8e0
+mm5 (NCBI Build 33),genome_build,55408126-5a4f-402b-9db7-5b9aa3e819f0
+mm4 (NCBI Build 32),genome_build,731810ac-38ef-4d39-812f-934e6f5f3af8
+mm3 (NCBI Build 30),genome_build,e3772f7f-92d6-47f8-a4c1-8642c859a9c1
+mm2 (MGSCv3),genome_build,da0a1ec0-40d1-4a51-ad21-b641a15cb18a
+mm1 (MGSCv2),genome_build,46965f24-05b2-456c-8a5c-75e25c0babe4
+RNA-Seq,library_strategy,86a25b1a-b6c8-45bc-a003-887732f43490
+scRNA-seq,library_strategy,9018c6b4-bbaf-4988-acef-aa1df0681e2a
+miRNA-Seq,library_strategy,174e5ef4-ec0a-43ac-8e54-0107c1d19343
+ncRNA-Seq,library_strategy,31f01cf7-8b44-44b9-9a39-feb5c18a8898
+ChIP-Seq,library_strategy,9750f762-4857-45e2-90ee-faeb9a5b2071
+ATAC-seq,library_strategy,d63533d1-27da-491b-8d46-604ebdd20502
+Bisulfite-Seq,library_strategy,23906982-c295-47e9-9378-8a16333b736f
+Bisulfite-Seq (reduced representation),library_strategy,721f4eaa-b115-4316-87f4-e2c82879a771
+Spatial Transcriptomics,library_strategy,645b1658-4386-415c-ac22-97dea6724309
+CITE-seq,library_strategy,c64ae2c8-b938-4af6-879a-91ec541de501
+CUT&Run,library_strategy,d9570e4b-e16b-4b85-a3f4-44ae31a5817e
+CUT&Tag,library_strategy,bf83873f-59a7-4f0a-ad57-656e182e8976
+MNase-Seq,library_strategy,737b2f8e-e8bb-4183-a3fc-df89064465de
+Hi-C,library_strategy,04f1c1a4-94f8-432f-932d-7f8c344ecbdf
+MBD-Seq,library_strategy,dd32e2f4-c8f9-4a6f-80d2-82a8784fcb75
+MRE-Seq,library_strategy,d738b9a2-5dd5-47a1-9bb4-37038a8d1e1d
+MeDIP-Seq,library_strategy,3652e242-5b11-46e8-a298-f0a7fdab5383
+DNase-Hypersensitivity,library_strategy,4dbe5057-4156-49ba-a604-2b27b4eb4a17
+Tn-Seq,library_strategy,59d24ce1-6aea-4a08-9846-94f725a4de35
+FAIRE-seq,library_strategy,cd97190c-5652-4332-85f0-ee4d98529b51
+SELEX,library_strategy,e2b8d843-87af-48c8-b0ea-23984e0637b0
+RIP-Seq,library_strategy,193f9895-215e-497b-bb57-3bda70b6e0eb
+ChIA-PET,library_strategy,22e5ae31-5af0-43b4-a2aa-f1eb8429db28
+BRU-Seq,library_strategy,32ba0414-36ae-4ec6-9dd1-cd463bdfaaff
+CRISPR Screen,library_strategy,62877db1-7544-4bd7-aa30-e2b198dc3add
+Capture-C,library_strategy,abaeceb3-d132-40ea-b292-002070594fa3
+ChEC-seq,library_strategy,3976dcf4-e51c-4ec1-bec7-aa2f76d1963e
+ChIRP-seq,library_strategy,e168557f-f9c5-4d5d-987d-76d32bc5fde7
+DamID-Seq,library_strategy,3e693c2f-bf1f-434d-81f0-0a506d286cf0
+EM-seq,library_strategy,ee0ac2d3-8e0f-4d76-8316-965d597cb7c3
+GRO-Seq,library_strategy,6c9c448a-0939-4d79-8076-53fc372f8c50
+HiChIP,library_strategy,03048eb1-6e0a-4f67-afab-b846e2100a98
+MeRIP-Seq,library_strategy,2e9bd9bf-039d-4cb2-b521-799b3a69bccf
+PRO-Seq,library_strategy,2b3beb60-200d-462a-bf42-f0ea9d7164e4
+RNA methylation,library_strategy,4d11f645-b75f-4bd6-8950-0f6956c4e89d
+Ribo-Seq,library_strategy,cd1e2b17-c87f-4313-8135-fa1733f0b2de
+TCR-Seq,library_strategy,886deee7-e72e-4ede-afb1-4053cea978a7
+BCR-Seq,library_strategy,8e27704d-2ac9-4f41-aa14-3a215d387a7f
+iCLIP,library_strategy,1d7bb1be-0439-4ebf-816f-1ec1a5b07032
+smallRNA-Seq,library_strategy,a7744c08-b8df-441e-83d0-68a61d5dfbab
+snRNA-Seq,library_strategy,94e81983-64d8-4640-af2d-63755ca8755b
+ssRNA-Seq,library_strategy,cf13f3a3-9be7-4d17-b0e1-ecc06537414c
+RNA-Seq (CAGE),library_strategy,5c500e71-88c0-4e15-9bb3-a977f59082ba
+RNA-Seq (RACE),library_strategy,7edd156a-2f49-4936-980e-289a533b92b7
+16S rRNA-seq,library_strategy,96179d80-79d6-49a1-ac5b-915cd00f9180
+4C-Seq,library_strategy,3925df8d-6778-4edb-aab7-768e3335e5da
+OTHER: WGS,library_strategy,b289ba65-7c71-4fa9-b551-104612afc344
+OTHER: snATAC-Seq,library_strategy,d15a1dfd-4762-4743-95b1-fe5129712b4c
+OTHER: scATAC-Seq,library_strategy,63e2c62c-825f-4854-94ee-bee77dcba9a5
+OTHER: snRNA-Seq,library_strategy,04c5170a-1939-4036-bb56-3f41a65ebc42
+OTHER: DREAM,library_strategy,d2acd96c-2323-433e-ab9b-9c3d5ccba966
+The Issa & Jelenik Lab,lab,4d206729-65bd-4417-95e9-09d356221a83
+The Jian Huang Lab,lab,6aed54aa-6647-4644-9841-23931ba2d81e
+The Scheinfeldt Lab,lab,37cb6853-18a6-4c91-8ec4-234298dfa852
+The Nora Engel Lab,lab,883fe45f-cfa0-41bf-b504-9393cc837eae
+The Luke Chen Lab,lab,9cb5cba3-0aee-45e1-ad42-f271f311bd60
+The Shumei Song Lab,lab,92b1e9ce-bc79-43d4-87c5-787463afc823
+GSK,institute,cdded4b8-1d06-4bae-9392-fd3eb216f851
+National Institute of Neurological Disorders and Stroke (NINDS),institute,14bd6c83-5b67-47c0-bcb4-9f95ac798189
+The Wistar Institute,institute,43c2257c-831c-4fda-a7ca-753a0355a249
+Camden Opioid Research Initiative (CORI),institute,05ec5ff5-5053-4b87-8d60-b754d32ac333
+Coriell Institute for Medical Research,institute,1ba8f7f0-8ef1-46e8-9abe-fd326d0e48f3
+Harvard Stem Cell Institue,institute,05804f9e-6ad8-44af-82fb-afe61364fc0b
+Cooper University Hospital (CUH),institute,9c4bbf4e-beda-416f-80fa-af48726c0ace
+Fels Institute for Cancer Research and Molecular Biology,institute,01b12d21-0393-4ba4-91b4-7a8cfa8937df
+Memorial Sloan Kettering Cancer Center (MSK),institute,c5d9880b-525c-49e5-84aa-ec42c3e93ffc
+Coriell Personalized Medicine Collaborative,institute,15a360da-68c9-4e39-97ee-7307165a5e31
+Optimizing Pain Treatment In New Jersey (OPTIN) Study,study,a14aee51-0f23-424e-aefa-aebeb7f2706f
+Genomics of Opioid Addiction Longitudinal Study (GOALS) Study,study,7fd76eda-d7cb-4344-a54f-6eb4805a51dc
