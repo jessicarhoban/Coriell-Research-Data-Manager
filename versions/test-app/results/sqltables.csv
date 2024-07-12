@@ -1,0 +1,73 @@
+database,schema,name,column_names,column_types,temporary
+browser,main,biomaterial,"['biomaterial_type' 'biomaterial_subtype' 'biomaterial_name'
+ 'biomaterial_symbol' 'biomaterial_uuid']",['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,biomaterial_folder,['biomaterial_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,cell,['cell_name' 'cell_id_uberon' 'cell_uuid'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,cell_folder,['cell_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,cell_line,"['search_term' 'cellosaurus_id' 'mgi_id' 'coriell_id' 'cell_line_name'
+ 'cell_line_uuid' 'atcc_id' 'age' 'sex' 'population' 'cell_line_category'
+ 'transformant_id_ncbi' 'transformant_name_ncbi']","['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'
+ 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR']",False
+browser,main,cell_line_biomaterial,['cell_line_uuid' 'biomaterial_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,cell_line_disease,['disease_uuid' 'cell_line_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,cell_line_folder,['cell_line_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,cell_line_gene,"['gene_uuid' 'cell_line_uuid' 'molecular_consequence' 'variant_type'
+ 'variant_subtype' 'zygosity' 'clinvar' 'germline_classification'
+ 'oncogenicity_classification' 'clinical_impact_classification'
+ 'functional_consequence_so' 'functional_consequence_so_name'
+ 'functional_consequence_vario' 'functional_consequence_vario_name']","['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'
+ 'VARCHAR' 'INTEGER' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR']",False
+browser,main,cell_line_organism,['organism_uuid' 'cell_line_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,cell_line_tissue,['tissue_uuid' 'cell_line_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,disease,"['disease_category' 'disease_name' 'disease_symbol' 'disease_id_ncit'
+ 'disease_uuid']",['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,disease_folder,['disease_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,experiment,['experiment_name' 'experiment_symbol' 'experiment_uuid'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,experiment_folder,['experiment_uuid' 'folder_uuid' 'experiment_subtype'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,folder,"['date' 'folderpath' 'foldername' 'jj_description' 'jj_type' 'cbix1/2'
+ 'folder_uuid']",['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,gene,['gene_id_hgnc' 'gene_id_ncbi' 'gene_name' 'gene_symbol' 'gene_uuid'],['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,gene_folder,"['gene_uuid' 'folder_uuid' 'molecular_consequence' 'variant_type'
+ 'variant_subtype' 'zygosity' 'clinvar' 'germline_classification'
+ 'oncogenicity_classification' 'clinical_impact_classification'
+ 'functional_consequence_so' 'functional_consequence_so_name'
+ 'functional_consequence_vario' 'functional_consequence_vario_name']","['VARCHAR' 'VARCHAR' 'INTEGER' 'INTEGER' 'INTEGER' 'INTEGER' 'INTEGER'
+ 'INTEGER' 'INTEGER' 'INTEGER' 'INTEGER' 'INTEGER' 'INTEGER' 'INTEGER']",False
+browser,main,gene_organism,['organism_uuid' 'gene_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,institute,['institute_name' 'institute_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,institute_folder,['institute_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,lab,['lab_name' 'lab_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,lab_folder,['lab_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,organism,['organism_name' 'latin_name' 'organism_id_ncbi' 'organism_uuid'],['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,organism_folder,['organism_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,researcher,['researcher_name' 'researcher_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,researcher_folder,['researcher_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,researcher_institute,['institute_uuid' 'researcher_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,researcher_lab,['lab_uuid' 'researcher_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,seqcompany,['seqcompany_name' 'seqcompany_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,seqcompany_folder,['seqcompany_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,study,['study_name' 'study_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,study_folder,['study_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,test_df_table,"['date' 'folderpath' 'foldername' 'reduced_foldername'
+ 'reduced_jjdescription' 'jj_description' 'jj_type' 'cbix1/2'
+ 'folder_uuid']","['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'
+ 'VARCHAR' 'VARCHAR']",False
+browser,main,tissue,['tissue_name' 'tissue_id_bto' 'tissue_id_uberon' 'tissue_uuid'],['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,tissue_folder,['tissue_uuid' 'folder_uuid'],['VARCHAR' 'VARCHAR'],False
+browser,main,treatment,"['treatment_name' 'treatment_id_pubchem' 'treatment_uuid'
+ 'treatment_symbol']",['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,treatment_folder,['treatment_uuid' 'folder_uuid' 'time' 'dosage'],['VARCHAR' 'VARCHAR' 'INTEGER' 'INTEGER'],False
+browser,main,v_folder_biomaterial,['folder_uuid' 'biomaterial_uuid' 'source'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,v_folder_disease,['folder_uuid' 'disease_uuid' 'source'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,v_folder_gene,"['folder_uuid' 'gene_uuid' 'molecular_consequence' 'variant_type'
+ 'variant_subtype' 'zygosity' 'clinvar' 'germline_classification'
+ 'oncogenicity_classification' 'clinical_impact_classification'
+ 'functional_consequence_so' 'functional_consequence_so_name'
+ 'functional_consequence_vario' 'functional_consequence_vario_name'
+ 'source']","['VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'
+ 'VARCHAR' 'INTEGER' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR' 'VARCHAR'
+ 'VARCHAR']",False
+browser,main,v_folder_institute,['folder_uuid' 'institute_uuid' 'source'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,v_folder_lab,['folder_uuid' 'lab_uuid' 'source'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,v_folder_organism,['folder_uuid' 'organism_uuid' 'source'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
+browser,main,v_folder_tissue,['folder_uuid' 'tissue_uuid' 'source'],['VARCHAR' 'VARCHAR' 'VARCHAR'],False
