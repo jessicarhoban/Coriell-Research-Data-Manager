@@ -165,23 +165,26 @@ def get_cloned_widget(clone, new_name, widget_row, is_new = ""):
 
 def get_table(sql_table, sql_columns, sql_linksto, 
                 formatters, editors, titles, 
-                hidden_columns, name, 
+                hidden_columns, name, save_button,
                 widget_row="", widget_template="", addrow_uuid="", addrow_newname="", affected_table = "", effect_type="",
                 selectable = 'toggle', show_index=False,
                 folder = "", sample = "",
                 hidden_table = False,
                 fill_template = {},
-                #configuration={}
                 ):
     
-    df = sqlfunc.get_table_values(table = sql_table, columns = sql_columns, links_to = sql_linksto, 
-                                    folder = folder, sample = sample)
+    #df = sqlfunc.get_table_values(table = sql_table, columns = sql_columns, links_to = sql_linksto, 
+    #                               folder = folder, sample = sample)
+
+    df = sqlfunc.get_values(options = "", values_type ="complex_table_link", values_table = sql_table, 
+                            values_column = sql_columns, values_uuid="", links_to = sql_linksto, 
+                            sample = sample, folder = folder)
+
     
     table = pn.widgets.Tabulator(df, 
                                     hidden_columns = hidden_columns,
                                     editors = editors,
                                     formatters = formatters,
-                                    #configuration=configuration,
                                     titles = titles,
                                     theme = 'semantic-ui',
                                     show_index = show_index,
@@ -199,21 +202,22 @@ def get_table(sql_table, sql_columns, sql_linksto,
     delete_button.on_click(partial(delete_row, table, addrow_uuid, addrow_newname, affected_table, 
                                    effect_type, widget_row, hidden_table, fill_template))
 
-    #update_commands = pn.bind(sqlfunc.get_update_commands, 
-    #                            widget,
-    #                            original_values = value,
-    #                            values_type = widget_row["values_type"],
-    #                            values_table = widget_row["values_table"],
-    #                            values_column = widget_row["values_column"],
-    #                            values_uuid = widget_row["values_uuid"],
-    #                            links_to = widget_row["links_to"],
-    #                            folder = folder,
-    #                            sample = sample)
-    
-    #pn.bind(sqlfunc.execute_update_commands, 
-    #        save_button, 
-    #        update_commands, 
-    #        watch=True)
+    #table.on_edit(lambda e: sqlfunc.get_update_commands
+    update_commands = pn.bind(sqlfunc.get_update_commands, 
+                              value_list = table.value, 
+                              original_values = '', 
+                              values_type = "complex_table_link", 
+                              values_table = sql_table, 
+                              values_column = '', 
+                              values_uuid = '', 
+                              links_to = sql_linksto, 
+                              sample = sample, 
+                              folder = folder)
+                  
+    pn.bind(sqlfunc.execute_update_commands, 
+            save_button, 
+            update_commands, 
+            watch=True)
             
     return table, add_button, delete_button
 
@@ -238,7 +242,6 @@ def get_df_from_table(table):
 
     return df, new_index, new_titles, new_editors, new_formatters
 
-#---------------------------------------------------------
 def set_table_from_df(df, table, titles = "", editors = "", formatters = "", clear_selection=False):
     table.value = df
     table.value["index"] = df.index
@@ -255,7 +258,6 @@ def set_table_from_df(df, table, titles = "", editors = "", formatters = "", cle
     if clear_selection == True:
         table.selection = []
 
-#---------------------------------------------------------
 def edit_name(event, table, table_uuid, affected_table="", widget_row = "", effect_type="", fill_template=""):
 
     print(event)
@@ -287,7 +289,6 @@ def edit_name(event, table, table_uuid, affected_table="", widget_row = "", effe
                         new_w = get_cloned_widget(clone = w.clone(), new_name = str(event.value), widget_row = widget_row)
                         widget_row[idx] = new_w
         
-#---------------------------------------------------------
 def add_row(folder, sample, name, widget_row, widget_template, 
             main_table, main_uuid, main_newname, links_to,
             affected_table="", effect_type="", hidden_table=False, fill_template="",
@@ -357,7 +358,6 @@ def add_row(folder, sample, name, widget_row, widget_template,
 
             widget_row.append(new_widget)
 
-#--------------------------------------------------------- 
 def delete_row(main_table, main_uuid, main_name, affected_table, effect_type,  widget_row="",  hidden_table=False, fill_template="", event=""):
     
     main_df, _, _, _, _ = get_df_from_table(table = main_table)
@@ -427,7 +427,6 @@ def delete_row(main_table, main_uuid, main_name, affected_table, effect_type,  w
 
     set_table_from_df(df = main_df, table = main_table, clear_selection = True)
     
-#--------------------------------------------------------- 
 def show_section(switch, section, switch_type = "Switch", lower_section=""):
     if switch_type == "Switch":
         if switch == False:
@@ -504,271 +503,5 @@ def fill_hidden_table(source_table, source_uuid, source_name, target_table, targ
 
             delete_row(table,  addrow_uuid, addrow_newname, affected_table, effect_type, widget_row, to_delete)
 
-            ##new_target_df, _, _, _, _ = get_df_from_table(table = target_table)
-            #new_target_df = new_target_df[0:0]
-            #set_table_from_df(df = new_target_df, table = target_table)   
-            #target_table.param.trigger('value') # Needs to be called to re-render the affected table
-            #print(target_table.value)
- 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-
-                      
-#---------------------------------------------------------CREATE TABS---------------------------------------------------------
-
-
-"""
-def get_nonsearchable_folder_tab(tab_layout, tab_name, header, folder_mc1, save_button):
-    tab = pn.Column(header)
-
-    for index, row in tab_layout.iterrows():
-
-        if "MultiChoice" in row["widget_type"]:
-
-            if row["options_type"] == "table":
-
-                options = sqlfunc.get_options(table_name = row["table_name"], 
-                                              field_name = row["column_name"], 
-                                              field_uuid = row["table_uuid"])
-                options = {v:k for k,v in sorted(options.items(), key=lambda item: item[1])}
-
-                values = sqlfunc.get_values(table_view = row["table_view"], 
-                                            table_name = row["table_name"], 
-                                            field_name = row["column_name"], 
-                                            field_uuid = row["table_uuid"],
-                                            folder_mc1 = folder_mc1)
-                
-                row_widget = pn.widgets.MultiChoice(name=row["column_title"], options=options, value=values)
-
-                if str(row["geo_description"]) != "nan":
-                    row_widget.description = str(row["geo_description"])
-
-                if row["widget_type"] == "MultiChoice (one)":
-                    row_widget.max_items = 1
-
-                update_commands = pn.bind(sqlfunc.get_update_commands, 
-                                          row_widget, 
-                                          row["table_view_editable"],
-                                          row["table_view"], 
-                                          row["table_uuid"], 
-                                          folder_mc1, 
-                                          is_searchable=False)
-                
-                pn.bind(sqlfunc.execute_update_commands, 
-                        save_button, 
-                        update_commands, 
-                        watch=True)
-                
-                tab.append(pn.Row(pn.Spacer(height=20)))
-                tab.append(pn.Row(pn.Spacer(width=30),row_widget))
-                tab.append(pn.Row(pn.Spacer(height=20)))
-            
-            #elif row["options_type"] == "multichoice_options":
-
-
-        
-        
-        elif (row["widget_type"] == "TextAreaInput"):
-            
-            value = sqlfunc.get_text_values(field_name = row["column_name"], 
-                                            folder_mc1 = folder_mc1)
-
-            
-            row_widget = pn.widgets.TextAreaInput(name=row["column_title"], 
-                                                  value=value, 
-                                                  height=int(row["height"]))
-            if str(row["geo_description"]) != "nan":
-                row_widget.description = str(row["geo_description"])
-                
-            update_commands = pn.bind(sqlfunc.get_text_update_commands, 
-                                      row_widget, 
-                                      row["column_name"], 
-                                      folder_mc1)
-            
-            pn.bind(sqlfunc.execute_update_commands,
-                     save_button, 
-                     update_commands, 
-                     watch=True)
-
-            tab.append(pn.Row(pn.Spacer(height=20)))
-            tab.append(pn.Row(pn.Spacer(width=30),row_widget))
-            tab.append(pn.Row(pn.Spacer(height=20)))
-        
-    return tab
-"""
-
-
-
-#---------------------------------------------------------CREATE TABS---------------------------------------------------------
-
-
-
-
-
-
-
-
-#---------------------------------------------------------CREATE TABS---------------------------------------------------------
-"""
-def get_nonsearchable_sample_tab(tab_layout, header, folder_mc1):
-    
-    # Get all samples linked to this folder
-    for val in folder_mc1:
-
-        tabulator_formatters = {}
-        df = sqlfunc.get_folder_samples(folder_val = str(val))
-        tabulator_titles = {"sample_name": "Library Name (Sample Name)",
-                            "sample_id": "Title (Sample ID)"}
-        tabulator_editors = {"sample_name":None, "sample_id":None}  
-        all_options = {}
-        mc_row = pn.Row(pn.Spacer(width=170))
-
-        for _, row in tab_layout.iterrows():
-
-            col_name = row["column_name"]
-            col_title = row["column_title"]
-            options = sqlfunc.get_options(table_name = row["table_name"], 
-                                          field_name = col_name, 
-                                          field_uuid = row["table_uuid"])
-
-            top_mc = pn.widgets.MultiChoice(name=col_title, placeholder="Pre-filter options for samples", width=170,
-                                            options = {v:k for k,v in sorted(options.items(), key=lambda item: str(item[1]))})#, reverse=True
-            mc_row.append(top_mc)
-
-            col_info = {'name':col_name,
-                        'type': 'list',
-                        'values':{k:v for k,v in sorted(options.items(), key=lambda item: str(item[1]))}}
-            
-            col_info['autocomplete'] = True
-            col_info['listOnEmpty'] = True
-            df[col_name] = ""
-            #values = sqlfunc.get_values(table["table_view"], table["table_name"], col_name, table["table_uuid"], str(val))
-            
-            tabulator_editors[col_name] =  col_info
-            tabulator_titles[col_name] = col_title
-            tabulator_formatters[col_name] = {'type':'lookup'}
-            tabulator_formatters[col_name].update(options)
-            all_options[col_name] = options
-
-            
-
-        df = pd.DataFrame(df, dtype=str)
-        tab_table = pn.widgets.Tabulator(df,
-                                        editors = tabulator_editors, 
-                                        formatters = tabulator_formatters, 
-                                        width = 1200,
-                                        widths = 170,
-                                        #selection=[],
-                                        selectable = 'toggle',
-                                        #widths = {'index': '5%', 'A': '15%', 'B': '15%', 'C': '25%', 'D': '40%'},
-                                        titles = tabulator_titles,
-                                        layout='fit_data_stretch',
-                                        hidden_columns = [col for col in df.columns if "uuid" in col],
-                                        show_index=False,
-                                        sorters= [{'field': 'sample_name', 'dir': 'asc'}])
-
-        tab_table.on_edit(lambda e:print(e, tab_table.selection))
-        #tab_table.add_filter(("Human"),"organism_name")
-
-        tab = pn.Column(header, 
-                        mc_row,
-                        tab_table, 
-                        pn.Spacer(styles=dict(background='white'),   sizing_mode='stretch_both'))
-
-        return tab
-"""
-
-
-
-
-
-
-
-
-
-
-
-"""
-def get_nonsearchable_sample_tab(tab_layout, tab_name, header, folder_mc1):
-  
-    # Get all samples linked to this folder
-    for val in folder_mc1:
-
-        tabulator_formatters = {}
-
-        df = sqlfunc.get_folder_samples(str(val))
-        tabulator_titles = {"sample_name": "Sample Name"}
-        tabulator_editors = {"sample_name":None}  
-        tables = tab_layout.loc[tab_layout["tab_name"]==tab_name]
-        all_options = {}
-        mc_row = pn.Row(pn.Spacer(width=170))
-
-        for _,table in tables.iterrows():
-            columns = dict(zip([k for k in table["columns"]["key"]],[k for k in table["columns"]["value"]]))
-            for col_name,col_title in columns.items():
-                
-                options = sqlfunc.get_options(table["table_name"], col_name, table["table_uuid"])
-                
-                col_info = {'name':col_name,
-                            'type': 'list',
-                            'values':{k:v for k,v in sorted(options.items(), key=lambda item: str(item[1]))}}
-                
-                
-                df[col_name] = ""
-                col_info['autocomplete'] = True
-                col_info['listOnEmpty'] = True
-                #values = sqlfunc.get_values(table["table_view"], table["table_name"], col_name, table["table_uuid"], str(val))
-                
-                tabulator_editors[col_name] =  col_info
-                tabulator_titles[col_name] = col_title
-                tabulator_formatters[col_name] = {'type':'lookup'}
-                tabulator_formatters[col_name].update(options)
-                all_options[col_name] = options
-
-                top_mc = pn.widgets.MultiChoice(name=col_title, placeholder="Pre-filter options for samples", width=170,
-                                                options = {v:k for k,v in sorted(options.items(), key=lambda item: str(item[1]))})#, reverse=True
-                mc_row.append(top_mc)
-
-        df = pd.DataFrame(df, dtype=str)
-        tab_table = pn.widgets.Tabulator(df,
-                                         editors = tabulator_editors, 
-                                         formatters = tabulator_formatters, 
-                                         width = 1200,
-                                         widths = 170,
-                                         #selection=[],
-                                         selectable = 'toggle',
-                                         #widths = {'index': '5%', 'A': '15%', 'B': '15%', 'C': '25%', 'D': '40%'},
-                                         titles = tabulator_titles,
-                                         layout='fit_data_stretch',
-                                         hidden_columns = [col for col in df.columns if "uuid" in col],
-                                         show_index=False,
-                                         sorters= [{'field': 'sample_name', 'dir': 'asc'}])
-
-        tab_table.on_edit(lambda e:print(e, tab_table.selection))
-        #tab_table.add_filter(("Human"),"organism_name")
-
-        tab = pn.Column(header, 
-                        mc_row,
-                        tab_table, 
-                        pn.Spacer(styles=dict(background='white'),   sizing_mode='stretch_both'))
-
-    return tab
-"""
-# %%
